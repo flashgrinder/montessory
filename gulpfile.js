@@ -30,7 +30,9 @@ const source = {
 		img:   './app/img/**/*.*',
 		js:    './app/js/',
 		libs:  [
-			// './app/libs/jquery-3.3.1.js',
+			'./app/libs/jquery-3.3.1.js',
+			'./app/libs/anime.js',
+			'./app/libs/swiper.js',
 			'./app/libs/common.js'
 		]
 	},
@@ -74,7 +76,7 @@ gulp.task('sassproc', sassproc);
 function jsfiles() {
 	return gulp.src(source.app.libs)
 	.pipe(sourcemaps.init())
-	.pipe(concat('scripts.min.js'))
+	// .pipe(concat('scripts.min.js'))
 	.pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest(source.app.js))
 	.pipe(browserSync.stream());
