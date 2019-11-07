@@ -1,0 +1,38 @@
+.headerContainer__menu
+	font-family: $roboto
+	font-weight: normal
+	ul
+		display: flex
+		align-items: center
+		text-align: center
+		li
+			position: relative
+			&:hover .menu-down
+				display: block
+				top: 69px
+				left: 0
+				width: 100%
+			&:hover a
+				background: #33A977
+				color: $white
+			.menu-down
+				position: absolute
+				display: flex
+				flex-direction: column
+				z-index: 5
+				display: none
+				a
+					padding: 15px 0
+					color: $white
+					background: $violet
+					margin-top: 4px
+			a
+				padding: 25px 20px
+				font-size: $base-font-size
+				&:hover
+					color: $white
+					background: #33A977
+	a
+		display: block
+		line-height: 19px
+		color: $violet
