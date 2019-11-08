@@ -2,23 +2,26 @@
 	position: relative
 	padding-left: 30px
 	padding-right: 30px
-	&__circle
+	&:before
+		content: ''
 		position: absolute
-		width: 758px
-		height: 758px
+		width: 730px
+		height: 730px
 		left: -121px
 		top: -121px
 		background: $violet
 		border-radius: 50%
-		z-index: -1
+		z-index: 2
 	&__wrapper
 		display: flex
 		justify-content: space-between
 		align-items: center
 	&__brand
+		position: relative
 		display: flex
 		justify-content: center
 		align-items: center
+		z-index: 5
 		&-logo
 			margin-right: 25px
 			height: 35px
@@ -38,6 +41,6 @@
 				margin-right: 10px
 			span
 				font-family: $blogger
-				font-weight: bold
+				font-weight: 700
 				font-size: $big-font-size
 				color: $white

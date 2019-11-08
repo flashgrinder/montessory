@@ -94,15 +94,12 @@ document.addEventListener('DOMContentLoaded', function(e){
 		var mySwiper = new Swiper ('.headerBanner__slider', {
 			// Optional parameters
 			direction: 'horizontal',
-			slidesPerGroup: 1,
 			loop: true,
+			effect: 'fade',
+			allowTouchMove: false,
+			watchSlidesProgress: true,
 			autoplay: {
 				delay: 4000
-			},
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
 			}
 		});
 

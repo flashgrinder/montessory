@@ -1,0 +1,287 @@
+.schoolCartBlock
+	position: relative
+	padding-top: 50px
+	padding-bottom: 50px
+	z-index: 5
+.schoolCartContainer
+	+row-flex()
+	justify-content: space-around
+	align-items: flex-start
+.schoolCart
+	+col()
+	+size(3)
+	position: relative
+	font-family: $blogger
+	height: 430px
+	&__text
+		position: relative
+		height: 185px
+		border-radius: 10px
+		h4
+			display: block
+			text-align: right
+			font-size: $big-font-size
+			font-weight: 700
+			margin: 0
+			text-transform: uppercase
+			line-height: 33px
+			padding: 18px 17px 0 0
+			color: $white
+		span
+			display: block
+			text-align: right
+			font-weight: 400
+			line-height: 33px
+			font-size: $large-font-size
+			padding: 0 17px 20px 0
+			color: $white
+		&_green
+			background: $green
+		&_yellow
+			background: $yellow
+		&_purple
+			background: $purple
+	&__img
+		position: absolute
+		&_green
+			top: 60px
+			left: -50px
+			width: 121
+			height: 303px
+		&_yellow
+			top: 173px
+			left: -20px
+			width: 229
+			height: 170px
+		&_purple
+			top: 106px
+			left: 30px
+			width: 229px
+			height: 249px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__header
+		position: relative
+		height: 50px	
+	&__starGreen
+		position: absolute
+		&_one
+			left: 20%
+			bottom: 15%
+			width: 57px
+			height: 57px
+		&_two
+			left: 45%
+			top: 2%
+			width: 19px
+			height: 19px
+		&_three
+			right: 6%
+			bottom: 4%
+			width: 35px
+			height: 35px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__circleGreen
+		position: absolute
+		border-radius: 50%
+		background: $green
+		&_one
+			width: 13px
+			height: 13px
+			left: 10%
+			bottom: 30%
+		&_two
+			width: 16px
+			height: 16px
+			right: 40%
+			bottom: 15%
+		&_three
+			width: 10px
+			height: 10px
+			right: 25%
+			top: 8%
+	&__bottomStarGreen
+		position: absolute
+		&_one
+			bottom: 19%
+			left: 15%
+		&_two
+			bottom: 7%
+			right: 18%
+		&_three
+			bottom: 15%
+			left: 39%
+	&__bottomCircleGreen
+		position: absolute
+		border-radius: 50%
+		background: $white
+		&_one
+			width: 13px
+			height: 13px
+			bottom: 7%
+			left: 19%
+		&_two
+			width: 16px
+			height: 16px
+			bottom: 4%
+			left: 49%
+		&_three
+			width: 10px
+			height: 10px
+			bottom: 27%
+			left: 63%
+		&_four
+			width: 24px
+			height: 24px
+			bottom: 20%
+			right: 6%
+	&__starYellow
+		position: absolute
+		&_one
+			width: 35px
+			height: 35px
+			top: 0
+			left: 30%
+		&_two
+			width: 57px
+			height: 57px
+			bottom: 20%
+			right: 5%
+		&_three
+			width: 19px
+			height: 19px
+			bottom: 10%
+			right: 35%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__circleYellow
+		position: absolute
+		border-radius: 50%
+		background: $yellow
+		&_one
+			width: 13px
+			height: 13px
+			bottom: 25%
+			left: 18%
+		&_two
+			width: 16px
+			height: 16px
+			bottom: 60%
+			left: 48%
+		&_three
+			width: 10px
+			height: 10px
+			top: 0
+			right: 25%
+	&__bottomStarYellow
+		position: absolute
+		&_one
+			width: 57px
+			height: 57px
+			top: 6%
+			left: 2%
+		&_two
+			width: 35px
+			height: 35px
+			top: 34%
+			left: 27%
+		&_three
+			width: 19px
+			height: 19px
+			bottom: 38%
+			left: 5%
+		&_four
+			width: 35px
+			height: 35px
+			bottom: 12%
+			right: 8%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__bottomCircleYellow
+		position: absolute
+		border-radius: 50%
+		background: $white
+		&_one
+			width: 24px
+			height: 24px
+			bottom: 20%
+			right: 40%
+		&_two
+			width: 10px
+			height: 10px
+			bottom: 10%
+			right: 30%
+	&__starPurple
+		position: absolute
+		&_one
+			width: 35px
+			height: 35px
+			bottom: 18%
+			left: 18%
+		&_two
+			width: 57px
+			height: 57px
+			bottom: 26%
+			left: 37%
+		&_three
+			width: 19px
+			height: 19px
+			bottom: 57%
+			right: 19%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__circlePurple
+		position: absolute
+		border-radius: 50%
+		background: $purple
+		&_one
+			width: 10px
+			height: 10px
+			bottom: 25%
+			left: 8%
+		&_two
+			width: 13px
+			height: 13px
+			bottom: 28%
+			right: 32%
+		&_three
+			width: 16px
+			height: 16px
+			bottom: 16%
+			right: 7%
+	&__bottomStarPurple
+		position: absolute
+		&_one
+			width: 35px
+			height: 35px
+			top: 6%
+			left: 2%
+		&_two
+			width: 19px
+			height: 19px
+			top: 25%
+			left: 15%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__bottomCirclePurple
+		position: absolute
+		border-radius: 50%
+		background: $white
+		&_one
+			width: 13px
+			height: 13px
+			top: 34%
+			left: 4%
