@@ -1,0 +1,77 @@
+.advantagesBlock
+	position: relative
+	z-index: 5
+	overflow: hidden
+	padding-top: 50px
+	padding-bottom: 50px
+	background: radial-gradient(100% 216.99% at 100% 100%, #F1C04B 0%, rgba(209, 80, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #443264
+	&__title
+		font-family: $blogger
+		text-align: center
+		font-size: 30px
+		line-height: 33px
+		font-weight: 700
+		text-transform: uppercase
+		color: $white
+		margin: 0
+	&__star
+		position: absolute
+		z-index: 1
+		&_one
+			top: 12%
+			left: -13%
+		&_two
+			top: -12%
+			right: -8%
+		&_three
+			bottom: -12%
+			right: 5%
+	&__circle
+		position: absolute
+		z-index: 1
+		border-radius: 50%
+		border: 2px solid $white
+		background: transparent
+		&_one
+			width: 28px
+			height: 28px
+			left: 15%
+			top: 18%
+		&_two
+			width: 70px
+			height: 70px
+			top: 30%
+			left: 15%
+		&_three
+			width: 170px
+			height: 170px
+			left: 33%
+			bottom: -19%
+		&_four
+			width: 77px
+			height: 77px
+			right: 40%
+			bottom: -3%
+.advantagesContainer
+	+row-flex()
+	justify-content: center
+	align-items: flex-start
+	text-align: center
+.advantagesCart
+	+col()
+	+size(3.1)
+	margin-top: 64px
+	&__img
+		height: 70px
+		margin: 0 auto
+		img
+			height: auto
+	&__text
+		font-family: $roboto
+		color: $white
+		width: 190px
+		margin: 0 auto
+		p
+			font-size: $base-font-size
+			line-height: 19px
+			font-weight: normal
