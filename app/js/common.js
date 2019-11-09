@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 		// 	},'-=800');
 		// };
 
-		var mySwiper = new Swiper ('.headerBanner__slider', {
+		var mySwiper1 = new Swiper ('.headerBanner__slider', {
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
@@ -100,6 +100,23 @@ document.addEventListener('DOMContentLoaded', function(e){
 			watchSlidesProgress: true,
 			autoplay: {
 				delay: 4000
+			}
+		});
+
+		var mySwiper2 = new Swiper ('.teachersSlider', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+			loopFillGroupWithBlank: true,
+			watchSlidesProgress: true,
+			autoplay: {
+				delay: 4000
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			}
 		});
 
