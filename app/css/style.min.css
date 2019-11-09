@@ -49,6 +49,21 @@
   bottom: 0;
 }
 
+.btn-centres {
+  display: block;
+  font-family: "Roboto", sans-serif, Tahoma;
+  border-radius: 100px;
+  z-index: 5;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 24px;
+  color: #f6f6f6;
+  width: 282px;
+  background: transparent;
+  border: 2px solid #f6f6f6;
+}
+
 /* Interface Slider(Swiper) */
 
 /**
@@ -784,7 +799,7 @@ button.swiper-pagination-bullet {
 .headerContainer__menu ul li .menu-down a {
   padding: 15px 0;
   color: #f6f6f6;
-  background: #4C3C65;
+  background: #4D3D66;
   margin-top: 4px;
 }
 
@@ -801,7 +816,7 @@ button.swiper-pagination-bullet {
 .headerContainer__menu a {
   display: block;
   line-height: 19px;
-  color: #4C3C65;
+  color: #4D3D66;
 }
 
 /* Header Block */
@@ -818,8 +833,8 @@ button.swiper-pagination-bullet {
   width: 730px;
   height: 730px;
   left: -121px;
-  top: -121px;
-  background: #4C3C65;
+  top: -105px;
+  background: #4D3D66;
   border-radius: 50%;
   z-index: 2;
 }
@@ -894,6 +909,10 @@ button.swiper-pagination-bullet {
   display: -webkit-flex;
   display: flex;
   height: 440px;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   overflow: hidden;
 }
 
@@ -906,6 +925,8 @@ button.swiper-pagination-bullet {
   position: relative;
   height: 440px;
   z-index: 5;
+  -webkit-flex-basis: 20%;
+          flex-basis: 20%;
 }
 
 .headerBanner__logo video {
@@ -914,6 +935,8 @@ button.swiper-pagination-bullet {
 
 .headerBanner__slider {
   height: 440px;
+  -webkit-flex-basis: 80%;
+          flex-basis: 80%;
 }
 
 .headerBanner__slider img {
@@ -1492,6 +1515,117 @@ button.swiper-pagination-bullet {
   font-weight: normal;
 }
 
+/* Centres-main Block */
+
+.centresContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.centresCart {
+  position: relative;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.centresCart__img {
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+}
+
+.centresCart__img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.centresCart__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.centresCart__img .btn-centres {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.centresCart__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.centresCart__logo img {
+  height: auto;
+  width: 100%;
+}
+
+.centresCart__option {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.centresCart__option a {
+  font-family: "Roboto", sans-serif, Tahoma;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  display: block;
+  padding: 30px;
+  width: 100%;
+  color: #f6f6f6;
+}
+
+.centresCart__option a:hover {
+  background: #f6f6f6;
+}
+
+.centresCart__option_purple a {
+  background: #9E86BD;
+}
+
+.centresCart__option_purple a:hover {
+  color: #9E86BD;
+}
+
+.centresCart__option_yellow a {
+  background: #F1C04B;
+}
+
+.centresCart__option_yellow a:hover {
+  color: #F1C04B;
+}
+
 /* Footer Block */
 
 /* Normalize */
@@ -1715,7 +1849,7 @@ img {
   src: url("../fonts/Roboto/Roboto-Bold.eot");
   src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 @font-face {
