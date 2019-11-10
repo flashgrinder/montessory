@@ -28,25 +28,18 @@
   line-height: 19px;
   padding: 16px 24px;
   color: #f6f6f6;
-  width: 100%;
 }
 
 .btn-product_green {
-  position: absolute;
   background: #33A977;
-  bottom: 0;
 }
 
 .btn-product_yellow {
-  position: absolute;
   background: #F1C04B;
-  bottom: 0;
 }
 
 .btn-product_purple {
-  position: absolute;
   background: #9E86BD;
-  bottom: 0;
 }
 
 .btn-centres {
@@ -983,6 +976,12 @@ button.swiper-pagination-bullet {
   height: 430px;
 }
 
+.schoolCart .btn-product {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .schoolCart__text {
   position: relative;
   height: 185px;
@@ -1638,6 +1637,7 @@ button.swiper-pagination-bullet {
   font-family: "BloggerSans", sans, Tahoma;
   font-weight: 700;
   font-size: 30px;
+  line-height: 33px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 50px;
@@ -1725,6 +1725,167 @@ button.swiper-pagination-bullet {
   display: block;
   text-align: center;
   padding-top: 10px;
+}
+
+/* FAQ Block */
+
+.faqBlock {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faqBlock__title {
+  font-family: "BloggerSans", sans, Tahoma;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  margin: 0;
+  text-align: center;
+  color: #E9984D;
+  text-transform: uppercase;
+}
+
+.faqContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.faqContainer__ask {
+  position: absolute;
+  z-index: -1;
+}
+
+.faqContainer__ask img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.faqContainer__ask_small {
+  top: -60px;
+  left: 40px;
+  width: 66px;
+  height: 80px;
+}
+
+.faqContainer__ask_large {
+  top: -100px;
+  left: 180px;
+  width: 233px;
+  height: 252px;
+}
+
+.faqContainer__ask_medium {
+  top: -85px;
+  right: 18%;
+  width: 124px;
+  height: 135px;
+}
+
+.faqContainer__ask_big {
+  top: -170px;
+  right: -10%;
+  height: 417px;
+  width: 233px;
+}
+
+.faqCart {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+  margin-top: 35px;
+}
+
+.faqCart__title {
+  background: #E9984D;
+  border-radius: 10px;
+  height: 110px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.faqCart__heading {
+  font-family: "BloggerSans", sans, Tahoma;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.faqCart__text {
+  border: 2px solid #33A977;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.faqCart__subtitle {
+  font-family: "BloggerSans", sans, Tahoma;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: -24px auto 0 auto;
+  color: #33A977;
+  background: #f6f6f6;
+  padding: 10px;
+  width: 100px;
+}
+
+.faqCart__descr {
+  font-family: "Roboto", sans-serif, Tahoma;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px 25px 38px 25px;
+  color: #585858;
+  margin: 0;
+}
+
+.faqCart__btnWrapp {
+  width: 220px;
+  background: #f6f6f6;
+  margin: 0 auto -25px auto;
+}
+
+.faqCart .btn-product {
+  width: 200px;
+  margin: 0 auto;
 }
 
 /* Footer Block */
@@ -2013,6 +2174,16 @@ body {
   }
 
   .advantagesCart {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .faqContainer {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .faqCart {
     margin-left: 5px;
     margin-right: 5px;
   }
