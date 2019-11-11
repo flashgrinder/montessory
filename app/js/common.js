@@ -120,5 +120,24 @@ document.addEventListener('DOMContentLoaded', function(e){
 			}
 		});
 
+		$('[data-fancybox="gallery"]').fancybox({
+			selector : '.galleryMasonry__item a:visible',
+			afterLoad : function(instance, current) {
+				var pixelRatio = window.devicePixelRatio || 1;
+		
+				if ( pixelRatio > 1.5 ) {
+					current.width  = current.width  / pixelRatio;
+					current.height = current.height / pixelRatio;
+				}
+			},
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"thumbs",
+				"close"
+			],
+		});
+
 });
 //# sourceMappingURL=common.js.map

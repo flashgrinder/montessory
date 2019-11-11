@@ -1,0 +1,36 @@
+.aboutMariaBlock
+	padding-top: 50px
+	padding-bottom: 50px
+	.btn-product
+		width: 238px
+		margin: 50px auto 0 auto
+.aboutMariaContainer
+	+row-flex()
+	justify-content: space-between
+	align-items: center
+.aboutMariaText
+	+col()
+	+size(6)
+	&__heading
+		font-family: $blogger
+		font-weight: 700
+		line-height: 33px
+		text-transform: uppercase
+		color: $purple
+		font-size: $big-font-size
+	&__descr
+		font-family: $roboto
+		font-weight: normal
+		font-size: $base-font-size
+		line-height: 20px
+		color: $grey
+		padding-bottom: 10px
+.aboutMariaPhoto
+	+col()
+	+size(5)
+	&__img
+		text-align: center
+		img
+			width: 100%
+			height: auto
+			object-fit: cover

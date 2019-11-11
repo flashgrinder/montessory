@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
   </head>
   <body>
     <div class="debug">
@@ -56,6 +57,7 @@
         </div>
       </div>
     </header>
+    <div class="headerContainer__circle headerContainer__circle_violet"></div>
     <!-- Slider-header Block-->
     <div class="headerBanner">
       <div class="headerBanner__logo">
@@ -211,6 +213,23 @@
           </div>
         </div>
       </section>
+      <!--Montessory Block-->
+      <section class="aboutMariaBlock">
+        <div class="wrapper">
+          <div class="aboutMariaContainer">
+            <div class="aboutMariaText">
+              <h4 class="aboutMariaText__heading">О Марии Монтессори</h4>
+              <p class="aboutMariaText__descr">Монтессори – это фамилия первой женщины в истории Италии, окончившей курс медицины, и одной из первых носительниц учёной степени доктора наук.</p>
+              <p class="aboutMariaText__descr">Мария Монтессори - всемирно известный человек своего времени, была выдвинута на Нобелевскую премию мира. В 1988 г. решением ЮНЕСКО её имя включено в список четырех педагогов, определивших способ педагогического мышления XX века: Джон Дьюи, Георг Кершенштейнер, Мария Монтессори, Антон Макаренко.</p>
+              <p class="aboutMariaText__descr">Монтессори-педагогика в России появилась еще в начале прошлого века. В 1910 г. дом ребенка М. Монтессори посетила дочь Льва Толстого Татьяна Сухотина-Толстая. Она увидела в Монтессори-школе воплощение идей своего отца. А в 1914 г. Российское министерство народного просвещения командировало в "Дом ребенка" группу общественных деятелей дошкольного воспитания, что дало толчок в развитии Монтессори-системы в России, однако только до поры революции. В послереволюционной России забытая методика Монтессори возродилась в 90-е годы ХХ века.</p>
+              <p class="aboutMariaText__descr">Система Монтессори получила свое признание во многих странах мира, например - в США, Нидерландах, Индии, Канаде, Австралии, Англии, Италии.</p>
+            </div>
+            <div class="aboutMariaPhoto">
+              <div class="aboutMariaPhoto__img"><img src="img/about-montessory/maria.png" alt="alt"/></div>
+            </div>
+          </div><a class="btn-product btn-product_purple" href="#">Подробней о методике</a>
+        </div>
+      </section>
       <!--Teachers Block-->
       <section class="teachersBlock">
         <h3 class="teachersBlock__title">Наши педагоги</h3>
@@ -311,10 +330,27 @@
           </div>
         </div>
       </section>
+      <!--Gallery Block-->
+      <section class="galleryMainBlock">
+        <h4 class="galleryMainBlock__title">Фотогалерея</h4>
+        <div class="wrapper-fluid">
+          <div class="galleryMasonry"><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-1.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-1.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-3.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-3.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-4.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-4.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-5.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-5.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-6.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-6.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-7.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-7.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a></div>
+        </div>
+      </section>
+      <!--Gallery Block-->
+      <section class="contactsBlock">
+        <h4 class="contactsBlock__title">Контакты</h4>
+        <div class="contactssMap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd767f626fdd91ccce865d9abe1cbf66a5ca58a411b11fc465ba7f6b2fa38fb4&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false"></script></div>
+        <address class="contactsAddressContainer">
+          <div class="contactsAddress contactsAddress_purple"><span class="contactsAddress__name">Be Friends</span><span class="contactsAddress__position">Весенний проезд, дом 8,</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
+          <div class="contactsAddress contactsAddress_orange"><span class="contactsAddress__name">Оле Лукойе</span><span class="contactsAddress__position">Весенний проезд, дом 8,</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
+        </address>
+      </section>
     </main>
     <script src="js/jquery-3.3.1.js" defer="defer"></script>
     <script src="js/anime.js" defer="defer"></script>
     <script src="js/swiper.js" defer="defer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
     <script src="js/common.js" defer="defer"></script>
   </body>
 </html>

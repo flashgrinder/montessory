@@ -1,0 +1,29 @@
+.galleryMainBlock
+	position: relative
+	padding-top: 50px
+	padding-bottom: 50px
+	&__title
+		font-family: $blogger
+		font-size: $big-font-size
+		font-weight: 700
+		line-height: 33px
+		text-transform: uppercase
+		text-align: center
+		color: $purple
+		margin-bottom: 0
+
+.galleryMasonry
+	+row-flex()
+	justify-content: space-around
+	align-items: flex-start
+	&__item
+		+col()
+		+size(3)
+		margin-top: 30px
+		text-align: center
+		height: 300px
+		max-height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
