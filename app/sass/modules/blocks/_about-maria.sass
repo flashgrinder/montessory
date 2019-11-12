@@ -1,9 +1,51 @@
 .aboutMariaBlock
+	position: relative
 	padding-top: 50px
 	padding-bottom: 50px
 	.btn-product
 		width: 238px
 		margin: 50px auto 0 auto
+	&__circle
+		position: absolute
+		border-radius: 50%
+		border: 2px solid $purple
+		z-index: -1
+		&_one
+			width: 241px
+			height: 241px
+			top: -89px
+			left: -89px
+		&_two
+			width: 92px
+			height: 92px
+			bottom: 50px
+			left: 30px
+		&_three
+			width: 60px
+			height: 60px
+			top: 30px
+			left: 50%
+		&_four
+			width: 132px
+			height: 132px
+			bottom: 53px
+			right: 30%
+	&__star
+		position: absolute
+		z-index: -1
+		&_one
+			left: -200px
+			top: 40%
+		&_two
+			left: 50%
+			top: 20%
+		&_three
+			top: -50px
+			right: 0
+		&_four
+			bottom: 30px
+			right: -200px
+
 .aboutMariaContainer
 	+row-flex()
 	justify-content: space-between
