@@ -10,7 +10,7 @@ module.exports = {
 	},
 	breakPoints: {
 		xl: {
-			width: "1200px"
+			width: "1280px"
 		},
 		lg: {
 			width: "992px"

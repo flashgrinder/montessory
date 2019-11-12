@@ -91,6 +91,13 @@ document.addEventListener('DOMContentLoaded', function(e){
 		// 	},'-=800');
 		// };
 
+		var mobMenu = document.querySelector('.headerContainer__menu');
+
+		mobMenu.addEventListener('click', function(e) {
+			mobMenu.classList.toggle('headerContainer__menu_active');
+			e.preventDefault;
+		})
+
 		var mySwiper1 = new Swiper ('.headerBanner__slider', {
 			// Optional parameters
 			direction: 'horizontal',
@@ -98,6 +105,10 @@ document.addEventListener('DOMContentLoaded', function(e){
 			effect: 'fade',
 			allowTouchMove: false,
 			watchSlidesProgress: true,
+			speed: 3000,
+			fadeEffect: {
+				crossFade: true
+			},
 			autoplay: {
 				delay: 4000
 			}
@@ -111,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			slidesPerGroup: 5,
 			loopFillGroupWithBlank: true,
 			watchSlidesProgress: true,
+			speed: 3000,
 			autoplay: {
 				delay: 4000
 			},
