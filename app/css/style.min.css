@@ -1790,14 +1790,13 @@ button.swiper-pagination-bullet {
 
 .teachersSlider {
   width: 100%;
-  height: 300px;
-  margin-bottom: 50px;
+  height: 350px;
   background: transparent;
 }
 
 .teachersSlider .swiper-button-prev,
 .teachersSlider .swiper-button-next {
-  top: 30%;
+  top: 25%;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
   height: 82px;
@@ -1836,7 +1835,6 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  height: 100%;
 }
 
 .teachersSlide__img {
@@ -1861,13 +1859,25 @@ button.swiper-pagination-bullet {
 }
 
 .teachersSlide__text span {
-  font-family: "Roboto", sans-serif, Tahoma;
-  font-weight: normal;
-  font-size: 20px;
   color: #f6f6f6;
   display: block;
   text-align: center;
   padding-top: 10px;
+}
+
+.teachersSlide__text-name {
+  font-family: "BloggerSans", sans, Tahoma;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+.teachersSlide__text-works {
+  font-family: "Roboto", sans-serif, Tahoma;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
 }
 
 /* FAQ Block */
