@@ -1,0 +1,79 @@
+.aboutMethodBlock
+	padding-top: 100px
+	padding-bottom: 50px
+	position: relative
+	z-index: 15
+	height: 660px
+.aboutMethodContainer
+	+row-flex()
+	justify-content: flex-end
+	align-items: flex-start
+.aboutMethodImage
+	position: absolute
+	top: 200px
+	left: 100px
+	z-index: 15
+	&__img
+		height: 421px
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: contain
+	&__star
+		position: absolute
+		z-index: 15
+		img
+			width: 100%
+			height: auto
+		&_one
+			top: -80px
+			left: 90px
+		&_two
+			top: -90px
+			right: -40px
+		&_three
+			top: -50px
+			right: -160px
+	&__circle
+		border-radius: 50%
+		border: 2px solid $white
+		position: absolute
+		background: $white
+		&_one
+			width: 18px
+			height: 18px
+			top: -50px
+			left: 0
+		&_two
+			width: 22px
+			height: 22px
+			top: -45px
+			left: 250px
+		&_three
+			width: 33px
+			height: 33px
+			top: 210px
+			right: -50px
+		&_four
+			width: 21px
+			height: 21px
+			top: 120px
+			right: -110px
+.aboutMethodText
+	+col()
+	+size(5)
+	background: rgba(246,246,246, 0.50)
+	&__title
+		font-family: $blogger
+		font-weight: 700
+		font-size: $big-font-size
+		line-height: 33px
+		text-transform: uppercase
+		color: $purple
+		margin: 0
+	&__descr
+		font-family: $roboto
+		font-weight: normal
+		font-size: $base-font-size
+		color: $grey
+		line-height: 22px

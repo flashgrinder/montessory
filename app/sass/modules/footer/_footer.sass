@@ -1,6 +1,8 @@
 .footer
+	position: relative
 	padding: 50px 0px
 	background: $violet
+	z-index: 10
 .footerContainer
 	+row-flex()
 	justify-content: space-between
@@ -59,6 +61,9 @@
 				margin-right: 10px
 				&:last-child
 					margin-right: 0
+				img
+					width: 100%
+					height: auto
 	&__right
 		+col()
 		+size(7)

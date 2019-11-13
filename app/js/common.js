@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			e.preventDefault;
 		})
 
-		var mySwiper1 = new Swiper ('.headerBanner__slider', {
+		var sliderHeader = new Swiper ('.headerBanner__slider', {
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			}
 		});
 
-		var mySwiper2 = new Swiper ('.teachersSlider', {
+		var sliderTeacher = new Swiper ('.teachersSlider', {
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
@@ -123,6 +123,25 @@ document.addEventListener('DOMContentLoaded', function(e){
 			loopFillGroupWithBlank: true,
 			watchSlidesProgress: true,
 			speed: 3000,
+			autoplay: {
+				delay: 4000
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+
+		var sliderCenter = new Swiper ('.centerSlider', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			speed: 3000,
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 30,
+				slideShadows: false,
+			  },
 			autoplay: {
 				delay: 4000
 			},

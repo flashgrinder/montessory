@@ -1,0 +1,33 @@
+.centerCartBlock
+	padding-top: 50px
+	padding-bottom: 50px
+.centerCartContainer
+	+row-flex()
+	justify-content: space-between
+	align-items: flex-start
+.centerCart
+	+col()
+	+size(5.5)
+	margin-top: 60px
+	&__img
+		height: 300px
+		border-radius: 10px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		font-family: $blogger
+		font-weight: 700
+		font-size: $big-font-size
+		line-height: 33px
+		text-transform: uppercase
+		color: $purple
+		margin: 30px 0 10px 0
+	&__descr
+		font-family: $roboto
+		font-weight: normal
+		font-size: $base-font-size
+		line-height: 22px
+		color: $grey
