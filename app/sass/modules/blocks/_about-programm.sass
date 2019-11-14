@@ -1,0 +1,167 @@
+.aboutProgrammBlock
+	padding-top: 50px
+	position: relative
+	z-index: 15
+.aboutProgrammContainer
+	+row-flex()
+	justify-content: flex-end
+	align-items: flex-start
+.aboutProgrammImage
+	position: absolute
+	top: 240px
+	left: 150px
+	z-index: 15
+	&__text
+		position: absolute
+		top: 0
+		right: -280px
+		span
+			display: block
+			font-family: $blogger
+		&-title
+			font-size: 50px
+			line-height: 55px
+			font-weight: 700
+			text-transform: uppercase
+			color: $white
+			text-align: right
+		&-subtitle
+			font-size: 36px
+			font-weight: normal
+			color: $white
+			text-align: right
+			line-height: 40px
+
+	&__img
+		height: 411px
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: contain
+	&__star
+		position: absolute
+		z-index: 15
+		img
+			width: 100%
+			height: auto
+		&_one
+			top: -80px
+			right: -60px
+		&_two
+			top: -80px
+			right: -240px
+		&_three
+			top: 160px
+			right: -50px
+		&_four
+			bottom: 150px
+			right: -170px
+		&_five
+			bottom: 165px
+			right: -65px
+		&_six
+			top: -90px
+			right: -270px
+	&__circle
+		border-radius: 50%
+		border: 2px solid $white
+		position: absolute
+		background: $white
+		&_one
+			width: 18px
+			height: 18px
+			top: -50px
+			left: 90
+		&_two
+			width: 22px
+			height: 22px
+			top: -45px
+			right: -130px
+		&_three
+			width: 33px
+			height: 33px
+			bottom: 200px
+			right: -215px
+		&_four
+			width: 21px
+			height: 21px
+			bottom: 140px
+			right: -90px
+		&_five
+			width: 10px
+			height: 10px
+			top: -90px
+			right: -70px
+		&_six
+			width: 18px
+			height: 18px
+			bottom: 130px
+			right: 0px
+		&_seven
+			width: 14px
+			height: 14px
+			bottom: 210px
+			right: -115px
+.aboutProgrammBg__star
+	position: absolute
+	z-index: -1
+	img
+		width: 100%
+		height: auto
+		object-fit: contain
+	&_one
+		top: 50%
+		left: -50px
+	&_two
+		top: 15%
+		right: -10%
+	&_three
+		bottom: 6%
+		right: -10%
+		transform: rotate(30deg)
+	&_four
+		bottom: -38%
+		left: 35%
+.aboutProgrammBg__circle
+	position: absolute
+	border-radius: 50%
+	background: transparent
+	border: 2px solid $purple
+	z-index: -1
+	&_one
+		width: 132px
+		height: 132px
+		top: 56%
+		left: 38%
+	&_two
+		width: 60px
+		height: 60px
+		bottom: 17%
+		left: 38%
+	&_three
+		width: 92px
+		height: 92px
+		bottom: -15%
+		left: -1%
+	&_four
+		width: 241px
+		height: 241px
+		bottom: -37%
+		right: -5%
+.aboutProgrammText
+	+col()
+	+size(5)
+	&__title
+		font-family: $blogger
+		font-weight: 700
+		font-size: $big-font-size
+		line-height: 33px
+		text-transform: uppercase
+		color: $purple
+		margin: 30px 0 0 0
+	&__descr
+		font-family: $roboto
+		font-weight: normal
+		font-size: $base-font-size
+		color: $grey
+		line-height: 22px

@@ -1,4 +1,126 @@
 .aboutTeachersBlock
 	background: radial-gradient(100% 216.99% at 100% 100%, #F1C04B 0%, rgba(209, 80, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #443264
-	
-	
+	padding-top: 50px
+	padding-bottom: 50px
+	position: relative
+	&__title
+		position: absolute
+		top: -100px
+		left: 50%
+		transform: translateX(-50%)
+		font-family: $blogger
+		font-weight: 700
+		font-size: $big-font-size
+		line-height: 33px
+		text-transform: uppercase
+		text-align: center
+		color: $purple
+	&__star
+		position: absolute
+		z-index: 1
+		img
+			width: 100%
+			height: auto
+		&_one
+			top: 15%
+			left: -70px
+		&_two
+			top: 8%
+			right: 50px
+		&_three
+			top: 22%
+			right: -80px
+		&_four
+			top: 50%
+			right: 10px
+			transform: rotate(40deg)
+		&_five
+			top: 53%
+			left: 50px
+		&_six
+			top: 65%
+			left: 100px
+			transform: rotate(30deg)
+		&_seven
+			bottom: 20%
+			right: -30px
+			transform: rotate(-40deg)
+		&_eight
+			bottom: -110px
+			right: 5%
+	&__circle
+		position: absolute
+		background: transparent
+		border-radius: 50%
+		border: 2px solid $white
+		&_one
+			width: 92px
+			height: 92px
+			top: 30%
+			left: 150px
+		&_two
+			width: 437px
+			height: 437px
+			top: 33%
+			right: -50px
+		&_three
+			width: 60px
+			height: 60px
+			top: 42%
+			left: 100px
+		&_four
+			width: 132px
+			height: 132px
+			top: 63%
+			right: 100px
+		&_five
+			width: 430px
+			height: 430px
+			bottom: 5%
+			left: -100px
+		&_six
+			height: 92px
+			width: 92px
+			bottom: 12%
+			right: 130px
+.aboutTeachers
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+.aboutTeachersCart
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin-bottom: 60px
+	&:last-child
+		margin-bottom: 0
+	&__img
+		overflow: hidden
+		height: 190px
+		border-radius: 50%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__text
+		margin: 30px 0 0 0
+		text-align: center
+		span
+			display: block
+			font-family: $roboto
+			font-weight: normal
+			font-size: $base-font-size
+			line-height: 22px
+			color: $white
+			margin-bottom: 5px
+		&-name
+			font-family: $blogger
+			font-weight: 700
+			line-height: 33px
+			font-size: $big-font-size
+			text-transform: uppercase
+			color: $white
+			margin: 0 0 10px 0
