@@ -2,11 +2,206 @@
 	padding-top: 50px
 	position: relative
 	z-index: 15
+	&_padding
+		padding-bottom: 100px
 .aboutProgrammContainer
 	+row-flex()
 	justify-content: flex-end
 	align-items: flex-start
-.aboutProgrammImage
+/* Images Programm School */
+.aboutProgrammImageSchool
+	position: absolute
+	top: 300px
+	left: 100px
+	z-index: 15
+	&__text
+		position: absolute
+		top: -60px
+		right: -210px
+		span
+			display: block
+			font-family: $blogger
+		&-title
+			font-size: 50px
+			line-height: 55px
+			font-weight: 700
+			text-transform: uppercase
+			color: $white
+			text-align: right
+		&-subtitle
+			font-size: 36px
+			font-weight: normal
+			color: $white
+			text-align: right
+			line-height: 40px
+	&__img
+		height: 346px
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: contain
+	&__star
+		position: absolute
+		z-index: 15
+		img
+			width: 100%
+			height: auto
+		&_one
+			top: -130px
+			left: 130px
+		&_two
+			top: -80px
+			left: 20px
+		&_three
+			top: -125px
+			right: -220px
+		&_four
+			top: -150px
+			right: -80px
+		&_five
+			bottom: 135px
+			right: -70px
+		&_six
+			top: -155px
+			right: -135px
+	&__circle
+		border-radius: 50%
+		border: 2px solid $white
+		position: absolute
+		background: $white
+		&_one
+			width: 18px
+			height: 18px
+			top: 0px
+			right: 100px
+		&_two
+			width: 22px
+			height: 22px
+			top: 40px
+			right: -250px
+		&_three
+			width: 33px
+			height: 33px
+			bottom: 200px
+			right: -160px
+		&_four
+			width: 21px
+			height: 21px
+			top: -120px
+			right: 20px
+		&_five
+			width: 10px
+			height: 10px
+			top: -160px
+			right: 100px
+		&_six
+			width: 18px
+			height: 18px
+			bottom: 200px
+			right: -30px
+		&_seven
+			width: 14px
+			height: 14px
+			top: -140px
+			left: 80px
+/* Images Programm Childgarden */
+.aboutProgrammImageChildgarden
+	position: absolute
+	top: 300px
+	left: 50px
+	z-index: 15
+	&__text
+		position: absolute
+		top: -60px
+		right: -180px
+		span
+			display: block
+			font-family: $blogger
+		&-title
+			font-size: 50px
+			line-height: 55px
+			font-weight: 700
+			text-transform: uppercase
+			color: $white
+			text-align: right
+		&-subtitle
+			font-size: 36px
+			font-weight: normal
+			color: $white
+			text-align: right
+			line-height: 40px
+	&__img
+		height: 280px
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: contain
+	&__star
+		position: absolute
+		z-index: 15
+		img
+			width: 100%
+			height: auto
+		&_one
+			top: -130px
+			left: 170px
+		&_two
+			top: -80px
+			left: 60px
+		&_three
+			top: -125px
+			right: -240px
+		&_four
+			top: -150px
+			right: -130px
+		&_five
+			bottom: 135px
+			right: -65px
+		&_six
+			top: -155px
+			right: -160px
+	&__circle
+		border-radius: 50%
+		border: 2px solid $white
+		position: absolute
+		background: $white
+		&_one
+			width: 18px
+			height: 18px
+			top: -50px
+			right: 40px
+		&_two
+			width: 22px
+			height: 22px
+			top: 40px
+			right: -220px
+		&_three
+			width: 33px
+			height: 33px
+			bottom: 75px
+			right: -130px
+		&_four
+			width: 21px
+			height: 21px
+			top: -120px
+			right: -30px
+		&_five
+			width: 10px
+			height: 10px
+			top: -160px
+			right: 70px
+		&_six
+			width: 18px
+			height: 18px
+			top: -170px
+			right: -210px
+		&_seven
+			width: 14px
+			height: 14px
+			top: -140px
+			left: 120px
+/* Images Programm Mom */
+.aboutProgrammImageMom
 	position: absolute
 	top: 240px
 	left: 150px
@@ -31,7 +226,6 @@
 			color: $white
 			text-align: right
 			line-height: 40px
-
 	&__img
 		height: 411px
 		img
@@ -102,6 +296,7 @@
 			height: 14px
 			bottom: 210px
 			right: -115px
+/* Backgraund Page Programm */
 .aboutProgrammBg__star
 	position: absolute
 	z-index: -1
@@ -148,6 +343,7 @@
 		height: 241px
 		bottom: -37%
 		right: -5%
+/* Text Page Programm */
 .aboutProgrammText
 	+col()
 	+size(5)
@@ -165,3 +361,13 @@
 		font-size: $base-font-size
 		color: $grey
 		line-height: 22px
+	&__img
+		height: 300px
+		border-radius: 10px
+		width: 100%
+		overflow: hidden
+		margin-top: 50px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover

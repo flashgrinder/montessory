@@ -1,0 +1,47 @@
+.tablePriceContainer
+	padding-top: 50px
+	padding-bottom: 50px
+.tablePriceContainer
+	+row-flex()
+	justify-content: center
+.tablePrice
+	+col()
+	+size(6)
+	border-radius: 10px
+	&_green
+		border: 2px solid $green
+	&_yellow
+		border: 2px solid $yellow
+	&_purple
+		border: 2px solid $purple
+	&__heading
+		th
+			font-family: $blogger
+			font-weight: 700
+			font-size: $medium-font-size
+			text-transform: uppercase
+			color: $white
+			line-height: 24px
+			border-radius: 10px
+			padding: 10px
+		&_green
+			th
+				background: $green
+		&_yellow
+			th
+				background: $yellow
+		&_purple
+			th
+				background: $purple
+	&__body
+		td
+			font-family: $roboto
+			font-weight: normal
+			line-height: 20px
+			text-align: center
+			font-size: 18px
+			padding: 15px
+			color: $grey
+			span
+				display: block
+				text-align: center

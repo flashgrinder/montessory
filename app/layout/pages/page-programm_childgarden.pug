@@ -1,0 +1,17 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Детский сад'
+
+block content
+	// Circle-color Block
+	include ../modules/blocks/circle-yellow
+	main
+		// Programm Block
+		include ../modules/blocks/page-childgarden/about-programm_childgarden
+		// Center Cart Block
+		include ../modules/blocks/center-cart
+		// Table Price Block
+		include ../modules/blocks/page-childgarden/table-childgarden
+		// Childgarden Cart Block
+		include ../modules/blocks/page-childgarden/childgarden-cart

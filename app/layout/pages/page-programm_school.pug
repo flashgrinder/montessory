@@ -1,0 +1,17 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Начальная школа'
+
+block content
+	// Circle-color Block
+	include ../modules/blocks/circle-purple
+	main
+		// Programm Block
+		include ../modules/blocks/page-school/about-programm_school
+		// Center Cart Block
+		include ../modules/blocks/center-cart
+		// Table Price Block
+		include ../modules/blocks/page-school/table-school
+		// School Cart Block
+		include ../modules/blocks/page-school/school-cart
