@@ -754,6 +754,12 @@ button.swiper-pagination-bullet {
   font-weight: normal;
 }
 
+.headerContainer__menu_active {
+  top: 75px;
+  -webkit-transition: right .5s;
+  transition: right .5s;
+}
+
 .headerContainer__menu ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -764,6 +770,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .headerContainer__menu ul li {
@@ -864,6 +871,50 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
+}
+
+.headerContainer__burger {
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+}
+
+.headerContainer__burger .line {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background: #4D3D66;
+  border-radius: 100px;
+}
+
+.headerContainer__burger .line:before,
+.headerContainer__burger .line:after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 4px;
+  background: #4D3D66;
+  border-radius: 100px;
+}
+
+.headerContainer__burger .line:before {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 14px;
+}
+
+.headerContainer__burger .line:after {
+  top: 0;
+  left: 0;
+  margin-top: 14px;
 }
 
 .headerContainer__brand {
@@ -1473,7 +1524,7 @@ button.swiper-pagination-bullet {
 
 .advantagesBlock__star_two {
   top: -12%;
-  right: -16%;
+  right: -20%;
 }
 
 .advantagesBlock__star_three {
@@ -1565,6 +1616,24 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 19px;
   font-weight: normal;
+}
+
+/* About-us Block */
+
+.aboutUsBlock {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aboutUsBlock__title {
+  font-family: "BloggerSans", sans, Tahoma;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  color: #E9984D;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 /* Centres-main Block */
@@ -1784,6 +1853,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   color: #9E86BD;
   font-size: 30px;
+  margin-top: 0;
 }
 
 .aboutMariaText__descr {
@@ -1914,6 +1984,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   font-weight: normal;
   line-height: 19px;
+  padding: 10px 25px;
 }
 
 /* FAQ Block */
@@ -1936,7 +2007,6 @@ button.swiper-pagination-bullet {
 }
 
 .faqContainer {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -1944,6 +2014,7 @@ button.swiper-pagination-bullet {
           flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  position: relative;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
@@ -2000,7 +2071,9 @@ button.swiper-pagination-bullet {
   margin-right: 15px;
   width: -webkit-calc(25% - 30px);
   width: calc(25% - 30px);
-  margin-top: 35px;
+  position: relative;
+  z-index: 5;
+  margin-top: 50px;
 }
 
 .faqCart__title {
@@ -3790,32 +3863,18 @@ body {
     position: absolute;
     width: 255px;
     right: -255px;
-    top: 0;
     background: rgba(0, 0, 0, 0.85);
     height: 100vh;
     min-height: 100%;
     z-index: 10;
-    -webkit-transition: right 0.5s;
-    transition: right 0.5s;
-  }
-
-  .headerContainer__menu:before {
-    position: absolute;
-    content: '';
-    width: 50px;
-    height: 50px;
-    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIGlkPSJGaWxsZWRfTGluZSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxsaW5lIGZpbGw9Im5vbmUiIGlkPSJYTUxJRF84MzdfIiBzdHJva2U9IiMyMDBGNjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIHgxPSI3IiB4Mj0iMjUiIHkxPSIxNiIgeTI9IjE2Ii8+PGxpbmUgZmlsbD0ibm9uZSIgaWQ9IlhNTElEXzgzNl8iIHN0cm9rZT0iIzIwMEY2MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIgeDE9IjciIHgyPSIyNSIgeTE9IjI1IiB5Mj0iMjUiLz48bGluZSBmaWxsPSJub25lIiBpZD0iWE1MSURfODM1XyIgc3Ryb2tlPSIjMjAwRjYwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiB4MT0iNyIgeDI9IjI1IiB5MT0iNyIgeTI9IjciLz48L3N2Zz4=");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 10px;
-    left: -50px;
-    cursor: pointer;
+    -webkit-transition: right .5s;
+    transition: right .5s;
+    top: 74px;
   }
 
   .headerContainer__menu_active {
+    top: 74px;
     right: 0;
-    -webkit-transition: right 0.5s;
-    transition: right 0.5s;
   }
 
   .headerContainer__menu ul {
@@ -3865,6 +3924,12 @@ body {
     padding-bottom: 17px;
   }
 
+  .headerContainer__burger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+  }
+
   .footerContainer__left {
     width: -webkit-calc(33.33333% - 30px);
     width: calc(33.33333% - 30px);
@@ -3880,140 +3945,474 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .schoolCartContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+@media screen and (max-width: 992px) {
+  .headerContainer__menu {
+    top: 75px;
+  }
+
+  .headerContainer__menu_active {
+    top: 75px;
+    right: 0;
+  }
+
+  .headerContainer__circle {
+    display: none;
+  }
+
+  .headerContainer {
+    background: #4D3D66;
+    border-bottom: 1px solid #f6f6f6;
+    position: fixed;
+    width: 100%;
+  }
+
+  .headerContainer__burger .line {
+    background: #f6f6f6;
+  }
+
+  .headerContainer__burger .line:before,
+  .headerContainer__burger .line:after {
+    background: #f6f6f6;
+  }
+
+  .headerBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: auto;
+    padding-top: 75px;
+  }
+
+  .headerBanner__logo {
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    width: 100%;
+    background: #4D3D66;
+  }
+
+  .headerBanner__logo video {
+    width: 100%;
+  }
+
+  .headerBanner__slider {
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    width: 100%;
   }
 
   .schoolCart {
-    margin-left: 5px;
-    margin-right: 5px;
+    width: -webkit-calc(37.5% - 30px);
+    width: calc(37.5% - 30px);
   }
 
-  .advantagesContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+  .advantagesBlock__star {
+    display: none;
   }
 
-  .advantagesCart {
-    margin-left: 5px;
-    margin-right: 5px;
+  .advantagesBlock__circle {
+    display: none;
   }
 
-  .aboutMariaContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+  .aboutMariaBlock__circle {
+    display: none;
   }
 
-  .aboutMariaText {
-    margin-left: 5px;
-    margin-right: 5px;
+  .aboutMariaBlock__star {
+    display: none;
   }
 
-  .aboutMariaPhoto {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .faqContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+  .faqContainer__ask {
+    display: none;
   }
 
   .faqCart {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .galleryMasonry {
-    margin-left: -5px;
-    margin-right: -5px;
-  }
-
-  .galleryMasonry__item {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .aboutCenter {
-    margin-left: -5px;
-    margin-right: -5px;
-  }
-
-  .aboutCenter__img {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .aboutCenter__text {
-    margin-left: 5px;
-    margin-right: 5px;
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
   }
 
   .centerCartContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
   }
 
   .centerCart {
-    margin-left: 5px;
-    margin-right: 5px;
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer__menu {
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .headerContainer__menu_active {
+    right: 0;
+  }
+
+  .headerContainer__burger {
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+  }
+
+  .headerContainer__brand {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .headerContainer__brand-logo {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .headerBanner__slider {
+    display: none;
+  }
+
+  .schoolCart {
+    width: -webkit-calc(45% - 30px);
+    width: calc(45% - 30px);
+  }
+
+  .schoolCart {
+    margin-top: 50px;
+  }
+
+  .advantagesBlock__title {
+    font-size: 24px;
+  }
+
+  .advantagesCart {
+    width: -webkit-calc(66.66667% - 30px);
+    width: calc(66.66667% - 30px);
+  }
+
+  .aboutUsBlock__title {
+    font-size: 24px;
+  }
+
+  .centresContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .centresCart {
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    width: 100%;
+  }
+
+  .aboutMariaContainer {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
+  .aboutMariaText {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .aboutMariaText__heading {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .aboutMariaPhoto {
+    width: -webkit-calc(83.33333% - 30px);
+    width: calc(83.33333% - 30px);
+  }
+
+  .faqBlock__title {
+    font-size: 24px;
+  }
+
+  .faqCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .centerCart {
+    width: -webkit-calc(83.33333% - 30px);
+    width: calc(83.33333% - 30px);
+  }
+
+  .centerCart__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .schoolCart__img_purple {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .headerContainer__menu {
+    top: 125px;
+  }
+
+  .headerContainer__menu_active {
+    right: 0;
+    top: 125px;
+  }
+
+  .headerContainer__brand-phone {
+    margin-top: 20px;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+            flex-grow: 0;
+  }
+
+  .headerContainer__brand-phone span {
+    font-size: 24px;
+  }
+
+  .schoolCart {
+    width: -webkit-calc(83.33333% - 30px);
+    width: calc(83.33333% - 30px);
+  }
+
+  .schoolCart__img_purple {
+    left: 40px;
+  }
+
+  .advantagesCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .aboutMariaText {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .aboutMariaPhoto {
+    width: -webkit-calc(83.33333% - 30px);
+    width: calc(83.33333% - 30px);
+  }
+
+  .faqCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .centerCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .headerContainer__brand-logo {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .headerContainer__brand-phone span {
+    font-size: 18px;
+  }
+
+  .schoolCartContainer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .schoolCart {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .schoolCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .schoolCart__img_green {
+    left: -5px;
+  }
+
+  .schoolCart__img_yellow {
+    left: 10px;
+  }
+
+  .schoolCart__img_purple {
+    left: 30px;
+  }
+
+  .advantagesContainer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .advantagesCart {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .advantagesCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .aboutMariaContainer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .aboutMariaText {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .aboutMariaText {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .aboutMariaPhoto {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .aboutMariaPhoto {
+    width: -webkit-calc(83.33333% - 30px);
+    width: calc(83.33333% - 30px);
+  }
+
+  .faqContainer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .faqCart {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .faqCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .galleryMasonry {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .galleryMasonry__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .aboutCenter {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .aboutCenter__img {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .aboutCenter__text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .centerCartContainer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .centerCart {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .centerCart {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
   }
 
   .aboutMethodContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .aboutMethodText {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .aboutProgrammContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .aboutProgrammText {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .tablePriceContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .tablePrice {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .footerContainer {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .footerContainer__left {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .footerContainer__right {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .wrapper {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .wrapper-fluid {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  .schoolCart__img_purple {
+    left: 10px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

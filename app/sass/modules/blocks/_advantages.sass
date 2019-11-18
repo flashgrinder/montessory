@@ -14,15 +14,17 @@
 		text-transform: uppercase
 		color: $white
 		margin: 0
+		+md(font-size, 24px)
 	&__star
 		position: absolute
 		z-index: 1
+		+lg(display, none)
 		&_one
 			top: 12%
 			left: -20%
 		&_two
 			top: -12%
-			right: -16%
+			right: -20%
 		&_three
 			bottom: -12%
 			right: -4%
@@ -32,6 +34,7 @@
 		border-radius: 50%
 		border: 2px solid $white
 		background: transparent
+		+lg(display, none)
 		&_one
 			width: 28px
 			height: 28px
@@ -60,6 +63,9 @@
 .advantagesCart
 	+col()
 	+size(3.1)
+	+size-md(8)
+	+size-sm(12)
+	+size-xs(12)
 	margin-top: 64px
 	&__img
 		height: 70px

@@ -7,32 +7,41 @@
 		position: absolute
 		width: 255px
 		right: -255px
-		top: 0
 		background: rgba(0,0,0,0.85)
 		height: 100vh
 		min-height: 100%
 		z-index: 10
-		transition: right 0.5s
-		&:before
-			position: absolute
-			content: ''
-			width: 50px
-			height: 50px
-			background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIGlkPSJGaWxsZWRfTGluZSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxsaW5lIGZpbGw9Im5vbmUiIGlkPSJYTUxJRF84MzdfIiBzdHJva2U9IiMyMDBGNjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIHgxPSI3IiB4Mj0iMjUiIHkxPSIxNiIgeTI9IjE2Ii8+PGxpbmUgZmlsbD0ibm9uZSIgaWQ9IlhNTElEXzgzNl8iIHN0cm9rZT0iIzIwMEY2MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIgeDE9IjciIHgyPSIyNSIgeTE9IjI1IiB5Mj0iMjUiLz48bGluZSBmaWxsPSJub25lIiBpZD0iWE1MSURfODM1XyIgc3Ryb2tlPSIjMjAwRjYwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiB4MT0iNyIgeDI9IjI1IiB5MT0iNyIgeTI9IjciLz48L3N2Zz4=')
-			background-repeat: no-repeat
-			background-size: cover
-			top: 10px
-			left: -50px
-			cursor: pointer
-		&_active
+		transition: right .5s
+		top: 74px
+	+lg-block
+		top: 75px
+	+md-block
+		right: -100vw
+		width: 100vw
+		height: 100vh
+	+sm-block
+		top: 125px
+	&_active
+		top: 75px
+		transition: right .5s
+		+xl-block
+			top: 74px
 			right: 0
-			transition: right 0.5s
+		+lg-block
+			top: 75px
+			right: 0
+		+md-block
+			right: 0
+		+sm-block
+			right: 0
+			top: 125px
 	ul
 		display: flex
 		align-items: center
 		text-align: center
 		list-style: none
 		padding: 0
+		margin: 0
 		+xl-block
 			flex-direction: column
 			align-items: center

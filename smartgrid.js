@@ -23,8 +23,8 @@ module.exports = {
 		},
 		xs: {
 			width: "400px",
-			offset: "10px",
-			fields: "5px"
+			offset: "30px",
+			fields: "15px"
 		}
 	},
 	mixinNames: {

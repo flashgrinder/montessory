@@ -91,10 +91,11 @@ document.addEventListener('DOMContentLoaded', function(e){
 		// 	},'-=800');
 		// };
 
-		var mobMenu = document.querySelector('.headerContainer__menu');
+		var mobMenu = document.querySelector('.headerContainer__burger');
+		var menuToggle = document.querySelector('.headerContainer__menu');
 
 		mobMenu.addEventListener('click', function(e) {
-			mobMenu.classList.toggle('headerContainer__menu_active');
+			menuToggle.classList.toggle('headerContainer__menu_active');
 			e.preventDefault;
 		})
 
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
-			speed: 3000,
+			speed: 2000,
 			effect: 'coverflow',
 			coverflowEffect: {
 				rotate: 30,
