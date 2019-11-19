@@ -18,6 +18,7 @@
 	&__star
 		position: absolute
 		z-index: 1
+		+lg(display, none)
 		img
 			width: 100%
 			height: auto
@@ -53,6 +54,7 @@
 		background: transparent
 		border-radius: 50%
 		border: 2px solid $white
+		+lg(display, none)
 		&_one
 			width: 92px
 			height: 92px
@@ -124,3 +126,4 @@
 			text-transform: uppercase
 			color: $white
 			margin: 0 0 10px 0
+			+sm(font-size, 20px)

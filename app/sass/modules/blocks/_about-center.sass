@@ -8,15 +8,22 @@
 	+row-flex()
 	justify-content: space-between
 	align-items: center
+	+lg-block
+		justify-content: center
+		align-items: center
 	&__img
 		+col()
 		+size(5)
+		+size-lg(7)
+		+size-sm(12)
 		img
 			width: 100%
 			height: auto
 	&__text
 		+col()
 		+size(6)
+		+size-lg(10)
+		+size-sm(12)
 		font-family: $roboto
 		&-descr
 			font-size: $base-font-size

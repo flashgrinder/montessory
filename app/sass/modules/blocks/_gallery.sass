@@ -11,7 +11,7 @@
 		text-align: center
 		color: $purple
 		margin-bottom: 0
-
+		+md(font-size, 24px)
 .galleryMasonry
 	+row-flex()
 	justify-content: space-around
@@ -19,6 +19,9 @@
 	&__item
 		+col()
 		+size(3)
+		+size-lg(6)
+		+size-md(10)
+		+size-xs(12)
 		margin-top: 30px
 		text-align: center
 		height: 300px

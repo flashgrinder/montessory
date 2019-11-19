@@ -1,13 +1,18 @@
 .tablePriceContainer
 	padding-top: 50px
 	padding-bottom: 50px
+	+md-block
+		padding-top: 0
+		padding-bottom: 0
 .tablePriceContainer
 	+row-flex()
 	justify-content: center
 .tablePrice
 	+col()
 	+size(6)
+	+size-md(12)
 	border-radius: 10px
+	+md(margin-top, 35px)
 	&_green
 		border: 2px solid $green
 	&_yellow
@@ -24,6 +29,9 @@
 			line-height: 24px
 			border-radius: 10px
 			padding: 10px
+			+xs-block
+				font-size: 14px
+				padding: 5px
 		&_green
 			th
 				background: $green
@@ -42,6 +50,9 @@
 			font-size: 18px
 			padding: 15px
 			color: $grey
+			+xs-block
+				font-size: 12px
+				padding: 5px
 			span
 				display: block
 				text-align: center

@@ -6,14 +6,22 @@
 .footerContainer
 	+row-flex()
 	justify-content: space-between
+	+lg-block
+		flex-direction: column
+		justify-content: center
+		align-items: center
 	&__left
 		+col()
 		+size(5)
 		+size-xl(4)
+		+size-lg(12)
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		align-items: flex-start
+		+lg-block
+			align-items: center
+			order: 1
 		.btn-product
 			margin-bottom: 50px
 	&__brand
@@ -22,7 +30,12 @@
 		justify-content: flex-start
 		flex-wrap: wrap
 		margin-bottom: 35px
+		+lg(margin-top, 35px)
+		+md-block
+			align-items: center
+			justify-content: center
 		&-logo
+			margin-left: 25px
 			margin-right: 25px
 			height: 35px
 			text-align: center
@@ -34,7 +47,12 @@
 			display: flex
 			align-items: center
 			text-align: center
+			+to(1367px)
+				margin-top: 20px
 			+xl(margin-top, 20px)
+			+lg-block
+				margin-top: 0
+			+sm(margin-top, 20px)
 			img
 				height: 30px
 				width: 30px
@@ -45,6 +63,7 @@
 				font-weight: 700
 				font-size: $big-font-size
 				color: $white
+				+sm(font-size, 24px)
 	&__social
 		&-title
 			font-family: $roboto
@@ -53,6 +72,7 @@
 			color: $white
 			line-height: 19px
 			margin: 0 0 10px 0
+			+md(text-align, center)
 		&-img
 			display: flex
 			align-items: center
@@ -66,10 +86,15 @@
 					height: auto
 	&__right
 		+col()
-		+size(7)
+		+size(6)
 		+size-xl(8)
+		+size-lg(12)
 		display: flex
 		justify-content: flex-end
+		+lg-block
+			justify-content: center
+			align-items: center
+		+md(display, none)
 	&__menu
 		font-family: $roboto
 		font-size: $base-font-size
@@ -90,6 +115,7 @@
 			&:last-child
 				a
 					border-right: none
+					padding-right: 0
 			ul
 				display: flex
 				flex-direction: column

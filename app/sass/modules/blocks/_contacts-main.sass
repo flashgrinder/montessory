@@ -9,12 +9,17 @@
 		text-transform: uppercase
 		text-align: center
 		color: $purple
+		+md(font-size, 24px)
 .contactsAddressContainer
 	display: flex
 	justify-content: space-around
 	align-items: center
+	+sm-block
+		flex-direction: column
+		justify-content: center
 .contactsAddress
 	margin-top: 50px
+	+sm(padding, 0 15px)
 	&_purple
 		color: $purple
 	&_orange
@@ -28,3 +33,4 @@
 		text-transform: uppercase
 		font-style: normal
 		text-align: center
+		+md(font-size, 24px)

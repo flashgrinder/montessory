@@ -8,14 +8,36 @@
 	line-height: 19px
 	padding: 16px 24px
 	color: $white
+	border: 2px solid transparent
 	&_green
 		background: $green
+		&:hover
+			color: $green
+			border: 2px solid $green
 	&_yellow
 		background: $yellow
+		&:hover
+			color: $yellow
+			border: 2px solid $yellow
 	&_purple
 		background: $purple
+		&:hover
+			color: $purple
+			border: 2px solid $purple
+	&_orange
+		background: $orange
+		&:hover
+			color: $orange
+			border: 2px solid $orange
 	&_red
 		background: $red
+		&:hover
+			color: $red
+			background: $white !important
+			border: 2px solid $red
+	&:hover
+		transition: all 0s
+		background: transparent
 .btn-centres
 	display: block
 	font-family: $roboto
