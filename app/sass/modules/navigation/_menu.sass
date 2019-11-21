@@ -1,19 +1,17 @@
 .headerContainer__menu
 	position: relative
-	z-index: 10
+	z-index: 1001
 	font-family: $roboto
 	font-weight: normal
 	+xl-block
-		position: absolute
+		position: fixed
 		width: 255px
-		right: -255px
+		right: -100vw
 		background: rgba(0,0,0,0.85)
 		height: 100vh
 		min-height: 100%
-		z-index: 10
+		z-index: 1001
 		transition: right .5s
-		top: 74px
-	+lg-block
 		top: 75px
 	+md-block
 		right: -100vw
@@ -25,9 +23,6 @@
 		top: 75px
 		transition: right .5s
 		+xl-block
-			top: 74px
-			right: 0
-		+lg-block
 			top: 75px
 			right: 0
 		+md-block

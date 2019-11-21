@@ -7,7 +7,45 @@ block content
 	// Circle-color Block
 	include ../modules/blocks/circle-violet
 	// Slider-header Block
-	include ../modules/blocks/page-center/slider-center
+	.headerCenterSlider.padding-75.padding-125
+		.swiper-container.centerSlider
+			.swiper-wrapper
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-2.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-3.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-4.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-5.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-6.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-8.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-9.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-10.jpg", alt="alt")
+				.swiper-slide
+					img(src="img/slider-centres/ole-luk/center-two-11.jpg", alt="alt")
+			.swiper-button-prev
+				img(src="img/icons/arrow-prev.svg", alt="")
+			.swiper-button-next
+				img(src="img/icons/arrow-next.svg", alt="")
 	main
 		// About Center Block
 		include ../modules/blocks/page-center/about-center
+		section.programmCenterBlock
+			h3.programmCenterBlock__title Направления центра
+			.wrapper
+				.programmCenterContainer
+					.programmButton
+						a(href="#").btn-product.btn-product_green Детский сад 2-3 лет
+					.programmButton
+						a(href="#").btn-product.btn-product_green Вместе с мамой
+					.programmButton
+						a(href="#").btn-product.btn-product_yellow Детский сад 3-6 лет
+					.programmButton
+						a(href="#").btn-product.btn-product_orange Рисование
+					.programmButton
+						a(href="#").btn-product.btn-product_orange Занятные выходные

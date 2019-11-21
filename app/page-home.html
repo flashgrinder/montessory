@@ -9,69 +9,53 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
   </head>
   <body>
-    <div class="debug">
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
     <!-- Block Header-->
     <header class="headerContainer">
       <div class="headerContainer__wrapper">
-        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
+        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
         <div class="headerContainer__burger"><span class="line"></span></div>
         <div class="headerContainer__menu">
           <ul>
             <li><a href="#">Наши центры</a>
               <ul class="menu-down">
-                <li><a href="#">Be Friends</a></li>
-                <li><a href="#">Оле Лукойе</a></li>
+                <li><a href="page-center_one.html">Be Friends</a></li>
+                <li><a href="page-center_two.html">Оле Лукойе</a></li>
               </ul>
             </li>
-            <li><a href="#">Методика</a></li>
+            <li><a href="page-methods.html">Методика</a></li>
             <li><a href="#">Программы</a>
               <ul class="menu-down">
-                <li><a href="#">от 1,5-3 лет</a></li>
-                <li><a href="#">от 3-6 лет</a></li>
-                <li><a href="#">от 6-9 лет</a></li>
+                <li><a href="page-programm_mom.html">от 1,5-3 лет</a></li>
+                <li><a href="page-programm_childgarden.html">от 3-6 лет</a></li>
+                <li><a href="page-programm_school.html">от 9-12 лет</a></li>
               </ul>
             </li>
-            <li><a href="#">Педагоги</a></li>
+            <li><a href="page-teachers.html">Педагоги</a></li>
             <li><a href="#">Блог</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="page-contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
     <!-- Circle-color Block-->
-    <div class="headerContainer__circle headerContainer__circle_violet"></div>
+    <div class="headerContainer__circle headerContainer__circle_violet hide-xl"></div>
     <!-- Slider-header Block-->
-    <div class="headerBanner">
+    <div class="headerBanner padding-75 padding-125">
       <div class="headerBanner__logo">
         <video autoplay="autoplay" loop="loop" muted="muted">
           <source src="img/slider/be.webm" type="video/webm"/>
         </video>
       </div>
-      <div class="swiper-container headerBanner__slider">
+      <div class="swiper-container headerBanner__slider hide-md">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
           <div class="swiper-slide"><img src="img/slider/slide-2.jpg" alt="alt"/></div>
-          <div class="swiper-slide"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-3.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-4.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-5.jpg" alt="alt"/></div>
         </div><a class="btn-product btn-product_red" href="#">Приходите на экскурсию!</a>
       </div>
     </div>
@@ -135,7 +119,7 @@
                 <div class="schoolCart__circlePurple schoolCart__circlePurple_three"></div>
               </div>
               <div class="schoolCart__text schoolCart__text_purple">
-                <h4>Начальная <br>школа </h4><span>от 6-9 лет</span>
+                <h4>Начальная <br>школа </h4><span>от 9-12 лет</span>
                 <div class="schoolCart__bottom">
                   <div class="schoolCart__bottomStarPurple schoolCart__bottomStarPurple_one"><img src="img/school-cart/objects/star-10.svg" alt="alt"/></div>
                   <div class="schoolCart__bottomStarPurple schoolCart__bottomStarPurple_two"><img src="img/school-cart/objects/star-11.svg" alt="alt"/></div>
@@ -149,13 +133,13 @@
       </section>
       <!-- Advantages Block-->
       <section class="advantagesBlock">
-        <div class="advantagesBlock__star advantagesBlock__star_one"><img src="img/advantages/objects/star-24.svg" alt="alt"/></div>
-        <div class="advantagesBlock__star advantagesBlock__star_two"><img src="img/advantages/objects/star-23.svg" alt="alt"/></div>
-        <div class="advantagesBlock__star advantagesBlock__star_three"><img src="img/advantages/objects/star-22.svg" alt="alt"/></div>
-        <div class="advantagesBlock__circle advantagesBlock__circle_one"></div>
-        <div class="advantagesBlock__circle advantagesBlock__circle_two"></div>
-        <div class="advantagesBlock__circle advantagesBlock__circle_three"></div>
-        <div class="advantagesBlock__circle advantagesBlock__circle_four"></div>
+        <div class="advantagesBlock__star advantagesBlock__star_one hide-lg"><img src="img/advantages/objects/star-24.svg" alt="alt"/></div>
+        <div class="advantagesBlock__star advantagesBlock__star_two hide-lg"><img src="img/advantages/objects/star-23.svg" alt="alt"/></div>
+        <div class="advantagesBlock__star advantagesBlock__star_three hide-lg"><img src="img/advantages/objects/star-22.svg" alt="alt"/></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_one hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_two hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_three hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_four hide-lg"></div>
         <div class="wrapper">
           <h3 class="advantagesBlock__title">Почему метод Монтессори актуален и востребован в мире?</h3>
           <div class="advantagesContainer">
@@ -184,9 +168,9 @@
               </div>
             </div>
             <div class="advantagesCart">
-              <div class="advantagesCart__img"><img src="img/advantages/advantage-9.svg" alt="alt"/></div>
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-7.svg" alt="alt"/></div>
               <div class="advantagesCart__text">
-                <p>Воспитание в разновозрастной среде адаптирует к жизни</p>
+                <p>Индивидуальный подход педагогов позволяет уделить внимание каждому, учесть особенности ребенка</p>
               </div>
             </div>
             <div class="advantagesCart">
@@ -202,9 +186,9 @@
               </div>
             </div>
             <div class="advantagesCart">
-              <div class="advantagesCart__img"><img src="img/advantages/advantage-7.svg" alt="alt"/></div>
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-9.svg" alt="alt"/></div>
               <div class="advantagesCart__text">
-                <p>Индивидуальный подход педагогов позволяет уделить внимание каждому, учесть особенности ребенка</p>
+                <p>Воспитание в разновозрастной среде адаптирует к жизни</p>
               </div>
             </div>
             <div class="advantagesCart">
@@ -222,27 +206,27 @@
         <div class="wrapper">
           <div class="centerCartContainer">
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-1.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Монтессори метод в воспитании детей</h3>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-2.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Билингвальную среду</h3>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-3.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Профессиональную поддержку родителей в воспитании ребенка</h3>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-4.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Сообщество квалифицированных педагогов</h3>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-5.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Организацию и контроль безопасности в помещениях и в зоне прогулок</h3>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+              <div class="centerCart__img"><img src="img/about-us/img-6.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Качественное питание (собственная кухня)</h3>
             </div>
           </div>
@@ -253,28 +237,28 @@
         <div class="centresContainer">
           <div class="centresCart">
             <div class="centresCart__img"><img class="scale" src="img/centres-main/centres-img-1.jpg" alt=""/>
-              <div class="centresCart__logo"><img src="img/centres-main/be-logo-big.png" alt=""/></div><a class="btn-centres" href="#">Узнать подробней</a>
+              <div class="centresCart__logo"><img src="img/centres-main/be-logo-big.png" alt=""/></div><a class="btn-centres" href="page-programm_childgarden.html">Узнать подробней</a>
             </div>
-            <div class="centresCart__option centresCart__option_purple"><a href="http://">2 опция центра (Танцы, вокал и др.)</a><a href="http://">3 опция центра (Танцы, вокал и др.)</a><a href="http://">Больше факультативов</a></div>
+            <div class="centresCart__option centresCart__option_purple"><a href="page-programm_childgarden.html">Шахматы (факультатив 6-10 лет) </a><a href="page-programm_childgarden.html">Архитектура (факультатив 6-10 лет)</a><a href="page-programm_childgarden.html">Больше факультативов</a></div>
           </div>
           <div class="centresCart">
             <div class="centresCart__img"><img class="scale" src="img/centres-main/centres-img-2.jpg" alt=""/>
-              <div class="centresCart__logo"><img src="img/centres-main/ole-logo-big.png" alt=""/></div><a class="btn-centres" href="#">Узнать подробней</a>
+              <div class="centresCart__logo"><img src="img/centres-main/ole-logo-big.png" alt=""/></div><a class="btn-centres" href="page-programm_school.html">Узнать подробней</a>
             </div>
-            <div class="centresCart__option centresCart__option_yellow"><a href="http://">2 опция центра (Танцы, вокал и др.)</a><a href="http://">3 опция центра (Танцы, вокал и др.)</a><a href="http://">Больше факультативов</a></div>
+            <div class="centresCart__option centresCart__option_yellow"><a href="page-programm_school.html">Ритмика (факультатив)</a><a href="page-programm_school.html">Занятные выходные (факультатив)</a><a href="page-programm_school.html">Рисование (факультатив)</a></div>
           </div>
         </div>
       </section>
       <!--Montessory Block-->
       <section class="aboutMariaBlock">
-        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_one"></div>
-        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_two"></div>
-        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_three"></div>
-        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_four"></div>
-        <div class="aboutMariaBlock__star aboutMariaBlock__star_one"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
-        <div class="aboutMariaBlock__star aboutMariaBlock__star_two"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
-        <div class="aboutMariaBlock__star aboutMariaBlock__star_three"><img src="img/about-montessory/star-26.svg" alt="alt"/></div>
-        <div class="aboutMariaBlock__star aboutMariaBlock__star_four"><img src="img/about-montessory/star-25.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_one hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_two hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_three hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_four hide-lg"></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_one hide-lg"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_two hide-lg"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_three hide-lg"><img src="img/about-montessory/star-26.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_four hide-lg"><img src="img/about-montessory/star-25.svg" alt="alt"/></div>
         <div class="wrapper">
           <div class="aboutMariaContainer">
             <div class="aboutMariaText">
@@ -337,10 +321,10 @@
         <h3 class="faqBlock__title">Часто задаваемые вопросы</h3>
         <div class="wrapper">
           <div class="faqContainer">
-            <div class="faqContainer__ask faqContainer__ask_small"><img src="img/faq/ask-1.png" alt=""/></div>
-            <div class="faqContainer__ask faqContainer__ask_large"><img src="img/faq/ask-2.png" alt=""/></div>
-            <div class="faqContainer__ask faqContainer__ask_medium"><img src="img/faq/ask-3.png" alt=""/></div>
-            <div class="faqContainer__ask faqContainer__ask_big"><img src="img/faq/ask-4.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_small hide-lg"><img src="img/faq/ask-1.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_large hide-lg"><img src="img/faq/ask-2.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_medium hide-lg"><img src="img/faq/ask-3.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_big hide-lg"><img src="img/faq/ask-4.png" alt=""/></div>
             <div class="faqCart">
               <div class="faqCart__title">
                 <h4 class="faqCart__heading">Мой ребенок аллергик. Как у вас решаются подобные проблемы с питанием?</h4>
@@ -384,24 +368,23 @@
       <section class="galleryMainBlock">
         <h4 class="galleryMainBlock__title">Фотогалерея</h4>
         <div class="wrapper-fluid">
-          <div class="galleryMasonry"><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-1.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-1.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-3.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-3.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-4.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-4.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-5.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-5.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-6.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-6.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-7.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-7.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a></div>
+          <div class="galleryMasonry"><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-1.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-1.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-3.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-3.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-4.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-4.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-5.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-5.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-6.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-6.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-7.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-7.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-8.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-8.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-9.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-9.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-10.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-10.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-11.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-11.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-12.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-12.jpg" alt="alt"/></a></div>
         </div>
       </section>
       <!--Gallery Block-->
       <section class="contactsBlock">
         <h4 class="contactsBlock__title">Контакты</h4>
-        <div class="contactssMap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd767f626fdd91ccce865d9abe1cbf66a5ca58a411b11fc465ba7f6b2fa38fb4&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false"></script></div>
+        <div class="contactssMap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd767f626fdd91ccce865d9abe1cbf66a5ca58a411b11fc465ba7f6b2fa38fb4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script></div>
         <address class="contactsAddressContainer">
-          <div class="contactsAddress contactsAddress_purple"><span class="contactsAddress__name">Be Friends</span><span class="contactsAddress__position">Симбирская, дом 27б</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
+          <div class="contactsAddress contactsAddress_purple"><span class="contactsAddress__name">Be Friends</span><span class="contactsAddress__position">Симбирская, дом 27</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
           <div class="contactsAddress contactsAddress_orange"><span class="contactsAddress__name">Оле Лукойе</span><span class="contactsAddress__position">Весенний проезд, дом 8,</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
         </address>
       </section>
     </main>
-    <script src="js/jquery-3.3.1.js" defer="defer"></script>
-    <script src="js/anime.js" defer="defer"></script>
-    <script src="js/swiper.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
-    <script src="js/common.js" defer="defer"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
     <footer class="footer">
       <div class="wrapper-fluid">
         <div class="footerContainer">

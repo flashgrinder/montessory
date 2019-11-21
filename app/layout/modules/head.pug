@@ -10,15 +10,14 @@ html(lang="ru")
 		meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 		title= pageTitle
 		link(rel="stylesheet" href="css/style.min.css")
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.css")
 	body
-		include ../tmp/grid
+		//- include ../tmp/grid
 		include header/header
 		block content
 		block scripts
-			script(src="js/jquery-3.3.1.js" defer)
-			script(src="js/anime.js" defer)
-			script(src="js/swiper.js" defer)
-			script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer)
-			script(src="js/common.js" defer)
+			script(src="js/jquery-3.3.1.js")
+			script(src="js/jquery.fancybox.js")
+			script(src="js/swiper.js")
+			script(src="js/common.js")
 		include footer/footer

@@ -1,8 +1,8 @@
 .advantagesBlock
 	position: relative
-	z-index: 5
+	z-index: 10
 	overflow: hidden
-	padding-top: 50px
+	padding-top: 20px
 	padding-bottom: 50px
 	background: radial-gradient(100% 216.99% at 100% 100%, #F1C04B 0%, rgba(209, 80, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #443264
 	&__title
@@ -13,12 +13,12 @@
 		font-weight: 700
 		text-transform: uppercase
 		color: $white
-		margin: 0
+		margin: 30px 0 0 0
 		+md(font-size, 24px)
+		+xl(margin-top, 30px)
 	&__star
 		position: absolute
-		z-index: 1
-		+lg(display, none)
+		z-index: -1
 		&_one
 			top: 12%
 			left: -20%
@@ -34,7 +34,6 @@
 		border-radius: 50%
 		border: 2px solid $white
 		background: transparent
-		+lg(display, none)
 		&_one
 			width: 28px
 			height: 28px

@@ -9,60 +9,42 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
     <title>Педагоги</title>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
   </head>
   <body>
-    <div class="debug">
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
     <!-- Block Header-->
     <header class="headerContainer">
       <div class="headerContainer__wrapper">
-        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
+        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
         <div class="headerContainer__burger"><span class="line"></span></div>
         <div class="headerContainer__menu">
           <ul>
             <li><a href="#">Наши центры</a>
               <ul class="menu-down">
-                <li><a href="#">Be Friends</a></li>
-                <li><a href="#">Оле Лукойе</a></li>
+                <li><a href="page-center_one.html">Be Friends</a></li>
+                <li><a href="page-center_two.html">Оле Лукойе</a></li>
               </ul>
             </li>
-            <li><a href="#">Методика</a></li>
+            <li><a href="page-methods.html">Методика</a></li>
             <li><a href="#">Программы</a>
               <ul class="menu-down">
-                <li><a href="#">от 1,5-3 лет</a></li>
-                <li><a href="#">от 3-6 лет</a></li>
-                <li><a href="#">от 6-9 лет</a></li>
+                <li><a href="page-programm_mom.html">от 1,5-3 лет</a></li>
+                <li><a href="page-programm_childgarden.html">от 3-6 лет</a></li>
+                <li><a href="page-programm_school.html">от 9-12 лет</a></li>
               </ul>
             </li>
-            <li><a href="#">Педагоги</a></li>
+            <li><a href="page-teachers.html">Педагоги</a></li>
             <li><a href="#">Блог</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="page-contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
     <!-- Circle-color Block-->
-    <div class="headerContainer__circle headerContainer__circle_violet"></div>
+    <div class="headerContainer__circle headerContainer__circle_violet hide-xl"></div>
     <main>
       <!-- About-method Block-->
-      <div class="aboutMethodImage">
+      <div class="aboutMethodImage hide-xl">
         <div class="aboutMethodImage__star aboutMethodImage__star_one"><img src="img/teachers/header/star-25.svg" alt="alt"/></div>
         <div class="aboutMethodImage__star aboutMethodImage__star_two"><img src="img/teachers/header/star-23.svg" alt="alt"/></div>
         <div class="aboutMethodImage__star aboutMethodImage__star_three"><img src="img/teachers/header/star-21.svg" alt="alt"/></div>
@@ -72,7 +54,7 @@
         <div class="aboutMethodImage__circle aboutMethodImage__circle_four"></div>
         <div class="aboutMethodImage__img"><img src="img/teachers/teachers.png" alt="alt"/></div>
       </div>
-      <section class="aboutMethodBlock">
+      <section class="aboutMethodBlock padding-75 padding-125">
         <div class="wrapper">
           <div class="aboutMethodContainer">
             <div class="aboutMethodText">
@@ -84,20 +66,20 @@
       </section>
       <!-- About Teachers Block-->
       <section class="aboutTeachersBlock">
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_one"><img src="img/teachers/objects/star-27.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_two"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_three"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_four"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_five"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_six"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_seven"><img src="img/teachers/objects/star-27.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_eight"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_one"></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_two"></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_three"></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_four"></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_five"></div>
-        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_six"></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_one hide-lg"><img src="img/teachers/objects/star-27.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_two hide-lg"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_three hide-lg"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_four hide-lg"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_five hide-lg"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_six hide-lg"><img src="img/teachers/objects/star-26.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_seven hide-lg"><img src="img/teachers/objects/star-27.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__star aboutTeachersBlock__star_eight hide-lg"><img src="img/teachers/objects/star-25.svg" alt="alt"/></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_one hide-lg"></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_two hide-lg"></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_three hide-lg"></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_four hide-lg"></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_five hide-lg"></div>
+        <div class="aboutTeachersBlock__circle aboutTeachersBlock__circle_six hide-lg"></div>
         <h3 class="aboutTeachersBlock__title">Наши педагоги</h3>
         <div class="wrapper-fluid">
           <div class="aboutTeachers">
@@ -165,11 +147,10 @@
         </div>
       </section>
     </main>
-    <script src="js/jquery-3.3.1.js" defer="defer"></script>
-    <script src="js/anime.js" defer="defer"></script>
-    <script src="js/swiper.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
-    <script src="js/common.js" defer="defer"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
     <footer class="footer">
       <div class="wrapper-fluid">
         <div class="footerContainer">

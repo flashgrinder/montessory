@@ -31,7 +31,7 @@ const source = {
 		js:    './app/js/',
 		libs:  [
 			'./app/libs/jquery-3.3.1.js',
-			'./app/libs/anime.js',
+			'./app/libs/jquery.fancybox.js',
 			'./app/libs/swiper.js',
 			'./app/libs/common.js'
 		]

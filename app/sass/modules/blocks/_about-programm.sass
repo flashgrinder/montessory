@@ -2,10 +2,8 @@
 	padding-top: 50px
 	position: relative
 	z-index: 15
-	+lg(padding-top, 75px)
-	+sm(padding-top, 125px)
 	&_padding
-		padding-bottom: 100px
+		padding-bottom: 50px
 		+md(padding-bottom, 0)
 .aboutProgrammContainer
 	+row-flex()
@@ -17,7 +15,6 @@
 	top: 300px
 	left: 100px
 	z-index: 15
-	+lg(display, none)
 	&__text
 		position: absolute
 		top: -60px
@@ -114,7 +111,6 @@
 	top: 300px
 	left: 50px
 	z-index: 15
-	+lg(display, none)
 	&__text
 		position: absolute
 		top: -60px
@@ -211,7 +207,6 @@
 	top: 240px
 	left: 150px
 	z-index: 15
-	+lg(display, none)
 	&__text
 		position: absolute
 		top: 0
@@ -306,7 +301,6 @@
 .aboutProgrammBg__star
 	position: absolute
 	z-index: -1
-	+lg(display, none)
 	img
 		width: 100%
 		height: auto
@@ -330,7 +324,6 @@
 	background: transparent
 	border: 2px solid $purple
 	z-index: -1
-	+lg(display, none)
 	&_one
 		width: 132px
 		height: 132px
@@ -355,7 +348,7 @@
 .aboutProgrammText
 	+col()
 	+size(5)
-	+size-lg(12)
+	+size-xl(12)
 	&__title
 		font-family: $blogger
 		font-weight: 700

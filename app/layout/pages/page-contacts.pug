@@ -1,0 +1,21 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Название центра 1'
+
+block content
+	include ../modules/blocks/circle-violet
+	main
+		section.contactsBlock.padding-75.padding-125
+			h4.contactsBlock__title Контакты
+			.contactssMap
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd767f626fdd91ccce865d9abe1cbf66a5ca58a411b11fc465ba7f6b2fa38fb4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+			address.contactsAddressContainer
+				.contactsAddress.contactsAddress_purple
+					span.contactsAddress__name Be Friends
+					span.contactsAddress__position Симбирская, дом 27
+					span.contactsAddress__phone тел.: 46-29-67
+				.contactsAddress.contactsAddress_orange
+					span.contactsAddress__name Оле Лукойе
+					span.contactsAddress__position Весенний проезд, дом 8,
+					span.contactsAddress__phone тел.: 46-29-67

@@ -2,6 +2,7 @@
 	position: relative
 	padding-top: 50px
 	padding-bottom: 50px
+	overflow: hidden
 	.btn-product
 		width: 238px
 		margin: 50px auto 0 auto
@@ -10,7 +11,6 @@
 		border-radius: 50%
 		border: 2px solid $purple
 		z-index: -1
-		+lg(display, none)
 		&_one
 			width: 241px
 			height: 241px
@@ -34,7 +34,6 @@
 	&__star
 		position: absolute
 		z-index: -1
-		+lg(display, none)
 		&_one
 			left: -200px
 			top: 40%

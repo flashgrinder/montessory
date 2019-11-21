@@ -4,11 +4,9 @@
 	position: relative
 	z-index: 15
 	height: 660px
-	+lg-block
-		padding-top: 75px
+	+xl-block
 		height: 400px
 	+sm-block
-		padding-top: 125px
 		height: 660px
 .aboutMethodContainer
 	+row-flex()
@@ -19,7 +17,6 @@
 	top: 200px
 	left: 100px
 	z-index: 15
-	+lg(display, none)
 	&__img
 		height: 421px
 		img
@@ -69,7 +66,7 @@
 .aboutMethodText
 	+col()
 	+size(5)
-	+size-lg(12)
+	+size-xl(12)
 	background: rgba(246,246,246, 1)
 	&__title
 		font-family: $blogger
@@ -79,7 +76,8 @@
 		text-transform: uppercase
 		color: $purple
 		margin: 0
-		+lg(margin-top, 30px)
+		+xl(margin-top, 30px)
+		+md(font-size, 24px)
 	&__descr
 		font-family: $roboto
 		font-weight: normal

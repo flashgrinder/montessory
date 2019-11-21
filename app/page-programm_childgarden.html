@@ -9,60 +9,42 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
     <title>Детский сад</title>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
   </head>
   <body>
-    <div class="debug">
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
     <!-- Block Header-->
     <header class="headerContainer">
       <div class="headerContainer__wrapper">
-        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
+        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
         <div class="headerContainer__burger"><span class="line"></span></div>
         <div class="headerContainer__menu">
           <ul>
             <li><a href="#">Наши центры</a>
               <ul class="menu-down">
-                <li><a href="#">Be Friends</a></li>
-                <li><a href="#">Оле Лукойе</a></li>
+                <li><a href="page-center_one.html">Be Friends</a></li>
+                <li><a href="page-center_two.html">Оле Лукойе</a></li>
               </ul>
             </li>
-            <li><a href="#">Методика</a></li>
+            <li><a href="page-methods.html">Методика</a></li>
             <li><a href="#">Программы</a>
               <ul class="menu-down">
-                <li><a href="#">от 1,5-3 лет</a></li>
-                <li><a href="#">от 3-6 лет</a></li>
-                <li><a href="#">от 6-9 лет</a></li>
+                <li><a href="page-programm_mom.html">от 1,5-3 лет</a></li>
+                <li><a href="page-programm_childgarden.html">от 3-6 лет</a></li>
+                <li><a href="page-programm_school.html">от 9-12 лет</a></li>
               </ul>
             </li>
-            <li><a href="#">Педагоги</a></li>
+            <li><a href="page-teachers.html">Педагоги</a></li>
             <li><a href="#">Блог</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="page-contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
     <!-- Circle-color Block-->
-    <div class="headerContainer__circle headerContainer__circle_yellow"></div>
+    <div class="headerContainer__circle headerContainer__circle_yellow hide-xl"></div>
     <main>
       <!-- Programm Block-->
-      <div class="aboutProgrammImageChildgarden">
+      <div class="aboutProgrammImageChildgarden hide-xl">
         <div class="aboutProgrammImageChildgarden__star aboutProgrammImageChildgarden__star_one"><img src="img/programm/header/star-25.svg" alt="alt"/></div>
         <div class="aboutProgrammImageChildgarden__star aboutProgrammImageChildgarden__star_two"><img src="img/programm/header/star-23.svg" alt="alt"/></div>
         <div class="aboutProgrammImageChildgarden__star aboutProgrammImageChildgarden__star_three"><img src="img/programm/header/star-21.svg" alt="alt"/></div>
@@ -79,15 +61,15 @@
         <div class="aboutProgrammImageChildgarden__img"><img src="img/programm/childgarden.png" alt="alt"/></div>
         <div class="aboutProgrammImageChildgarden__text"><span class="aboutProgrammImageChildgarden__text-title">Детский</span><span class="aboutProgrammImageChildgarden__text-title">сад</span><span class="aboutProgrammImageChildgarden__text-subtitle">от 3-6 лет</span></div>
       </div>
-      <div class="aboutProgrammBg__star aboutProgrammBg__star_one"><img src="img/programm/objects/star-27.svg" alt="alt"/></div>
-      <div class="aboutProgrammBg__star aboutProgrammBg__star_two"><img src="img/programm/objects/star-26.svg" alt="alt"/></div>
-      <div class="aboutProgrammBg__star aboutProgrammBg__star_three"><img src="img/programm/objects/star-26.svg" alt="alt"/></div>
-      <div class="aboutProgrammBg__star aboutProgrammBg__star_four"><img src="img/programm/objects/star-27.svg" alt="alt"/></div>
-      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_one"></div>
-      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_two"></div>
-      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_three"></div>
-      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_four"></div>
-      <section class="aboutProgrammBlock aboutProgrammBlock_padding">
+      <div class="aboutProgrammBg__star aboutProgrammBg__star_one hide-lg"><img src="img/programm/objects/star-27.svg" alt="alt"/></div>
+      <div class="aboutProgrammBg__star aboutProgrammBg__star_two hide-lg"><img src="img/programm/objects/star-26.svg" alt="alt"/></div>
+      <div class="aboutProgrammBg__star aboutProgrammBg__star_three hide-lg"><img src="img/programm/objects/star-26.svg" alt="alt"/></div>
+      <div class="aboutProgrammBg__star aboutProgrammBg__star_four hide-lg"><img src="img/programm/objects/star-27.svg" alt="alt"/></div>
+      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_one hide-lg"></div>
+      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_two hide-lg"></div>
+      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_three hide-lg"></div>
+      <div class="aboutProgrammBg__circle aboutProgrammBg__circle_four hide-lg"></div>
+      <section class="aboutProgrammBlock aboutProgrammBlock_padding padding-75 padding-125">
         <div class="wrapper">
           <div class="aboutProgrammContainer">
             <div class="aboutProgrammText">
@@ -105,45 +87,78 @@
         <div class="wrapper">
           <div class="centerCartContainer">
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Билингвальный формат</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-1.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ЗОНА ПРАКТИЧЕСКОЙ ЖИЗНИ И ПИТАНИЯ</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Двуязычная среда обеспечивается владением английским языком всеми сотрудниками центра и активной деятельностью монтессори-педагога, единственным языком общения в центре для которого является английский язык. Метод Монтессори дает возможность реализовать билингвальный подход не только во время прогулок и обедов, но и в период свободной работы детей в монтессори-среде. Англоязычный монтессори-педагог работает в паре с основным монтессори-педагогом в классе и дает презентации на английском языке. Кроме свободного общения дети занимаются английским языком на классических уроках.</p>
+                <p class="centerCart__descr">Здесь ребенок учится ухаживать за собой и пользоваться бытовыми предметами. Дети сами накрывают на стол, накладывают себе еду, убирают за собой, ухаживают за пространством.</p>
+                <p class="centerCart__descr">Ребенок станет более самостоятельным, сможет обслуживать себя, помогать по дому.</p>
               </div>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Индивидуальный подход</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-2.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ЗОНА СЕНСОРНОГО РАЗВИТИЯ</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Все темы по русскому языку, математике, геометрии разбираются с каждым ребенку индивидуально в рамках свободной работы в классе. При этом упражнения ребенок выполняет в своем темпе в нужное ему время.</p>
+                <p class="centerCart__descr">Здесь развиваются чувства ребенка, пространственное мышление, даются основы геометрии.</p>
+                <p class="centerCart__descr">Ребенок научится различать формы, размеры, вкус, запах, цвета предметов, расширит словарный запас.</p>
               </div>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Совместная проектно- образовательная работа</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-3.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ЗОНА РУССКОГО ЯЗЫКА</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Этот формат работы обеспечивает погружение детей в темы окружающего мира, давая возможность "проживать" истории жизни и процессов на Земле с экспертами по творчеству, архитектуре, музыке, при активном участии Монтессори педагога и "носителя" языка. Именно в рамках такой работы дети увлекаются историей, биологией, географией, что мотивирует их на дальнейшее исследование.</p>
+                <p class="centerCart__descr">Здесь дети учатся выделять звуки, составлять из букв слова и предложения. Особое внимание уделяется чтению детям и обсуждению услышанного. Ваш ребенок научится говорить, читать и писать.</p>
               </div>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Уникальная развивающая среда</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-4.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">МАТЕМАТИЧЕСКАЯ ЗОНА</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Богатая база наглядных материалов по математике, русскому языку, геометрии для детей начальной школы включает специально разработанный в рамках метода Монтессори материал, позволяющий не только осваивать программу ФГОС, но и "понимать" и любить основные предметы. Уникальные Ленты времени и Большие истории призваны во взаимосвязи фактов погрузить детей в историю происходивших на Земле событий.</p>
+                <p class="centerCart__descr">Здесь ребенок знакомится с количествами и символами. Ребенок научится выполнять базовые арифметические действия, познакомится с десятичной системой, освоит запись цифр и примеров.</p>
               </div>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Совместная проектно- образовательная работа</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-5.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ЗОНА ЗНАНИЙ ОБ ОКРУЖАЮЩЕМ МИРЕ</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Этот формат работы обеспечивает погружение детей в темы окружающего мира, давая возможность "проживать" истории жизни и процессов на Земле с экспертами по творчеству, архитектуре, музыке, при активном участии Монтессори педагога и "носителя" языка. Именно в рамках такой работы дети увлекаются историей, биологией, географией, что мотивирует их на дальнейшее исследование.</p>
+                <p class="centerCart__descr">Здесь ребенок получает первое представление о Вселенной, о нашей планете, животном и растительном мире.</p>
               </div>
             </div>
             <div class="centerCart">
-              <div class="centerCart__img"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
-              <h3 class="centerCart__title">Уникальная развивающая среда</h3>
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-6.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ЗОНА ДВИЖЕНИЯ</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Богатая база наглядных материалов по математике, русскому языку, геометрии для детей начальной школы включает специально разработанный в рамках метода Монтессори материал, позволяющий не только осваивать программу ФГОС, но и "понимать" и любить основные предметы. Уникальные Ленты времени и Большие истории призваны во взаимосвязи фактов погрузить детей в историю происходивших на Земле событий.</p>
+                <p class="centerCart__descr">Двигаясь, дети развивают координацию, тренируют вестибулярный аппарат, мышцы и ловкость движений.</p>
+              </div>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-7.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ПРОЕКТНАЯ РАБОТА</h3>
+              <div class="centerCart__text">
+                <p class="centerCart__descr">Формат проектной работы - это целостный подход к изучению выбранной темы, включающий групповые занятия - обсуждения с монтессори-педагогом, доклады детей, подготовленные с родителями, творческие мастерские и музыкальные классы.</p>
+              </div>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-8.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">МУЗЫКА</h3>
+              <div class="centerCart__text">
+                <p class="centerCart__descr">Мы используем методику К. Орфа. Темы музыкальных занятий перекликаются с проектной работой группы.</p>
+                <p class="centerCart__descr">У детей развивается музыкальный слух, чувство ритма. Они учатся музицировать, играть в такт на музыкальных инструментах, готовятся к мероприятиям.</p>
+              </div>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-9.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ТВОРЧЕСКАЯ МАСТЕРСКАЯ</h3>
+              <div class="centerCart__text">
+                <p class="centerCart__descr">Здесь используются различные техники, позволяющие изобразить, слепить, сшить, смастерить… Темы творчества перекликаются с проектной работой группы.</p>
+                <p class="centerCart__descr">Дети приобретают навыки работы с красками, кистью, карандашами, мелками, ножницами, выполняют различные аппликации, работают с бумагой, тканью, природным материалом.</p>
+              </div>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/programm/childgarden/img-10.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">ДВУЯЗЫЧНАЯ СРЕДА</h3>
+              <div class="centerCart__text">
+                <p class="centerCart__descr">Билингвальный формат обеспечивает общение на русском и английском языках!</p>
+                <p class="centerCart__descr">Здесь создана среда, где дети, педагоги и даже гости общаются на русском и английском языках в течение всего дня. Это обеспечивается владением английским языком всеми сотрудниками центра и активной деятельностью «носителя» языка, говорящего только на английском.</p>
               </div>
             </div>
           </div>
@@ -278,11 +293,10 @@
         </div>
       </section>
     </main>
-    <script src="js/jquery-3.3.1.js" defer="defer"></script>
-    <script src="js/anime.js" defer="defer"></script>
-    <script src="js/swiper.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
-    <script src="js/common.js" defer="defer"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
     <footer class="footer">
       <div class="wrapper-fluid">
         <div class="footerContainer">
