@@ -1,0 +1,435 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="og:image" content="img/social.png"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="theme-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+  </head>
+  <body>
+    <!-- Block Header-->
+    <header class="headerContainer">
+      <div class="headerContainer__wrapper">
+        <div class="headerContainer__brand"><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="headerContainer__brand-logo" href="page-home.html"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="headerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div>
+        <div class="headerContainer__burger"><span class="line"></span></div>
+        <div class="headerContainer__menu">
+          <ul>
+            <li><a href="#">Наши центры</a>
+              <ul class="menu-down">
+                <li><a href="page-center_one.html">Be Friends</a></li>
+                <li><a href="page-center_two.html">Оле Лукойе</a></li>
+              </ul>
+            </li>
+            <li><a href="page-methods.html">Методика</a></li>
+            <li><a href="#">Программы</a>
+              <ul class="menu-down">
+                <li><a href="page-programm_mom.html">от 1,5-3 лет</a></li>
+                <li><a href="page-programm_childgarden.html">от 3-6 лет</a></li>
+                <li><a href="page-programm_school.html">от 9-12 лет</a></li>
+              </ul>
+            </li>
+            <li><a href="page-teachers.html">Педагоги</a></li>
+            <li><a href="index.html">Блог</a></li>
+            <li><a href="page-contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="modalContainer" id="modal" style="display: none;">
+      <div class="modalContainer__wrapp">
+        <h4 class="modalContainer__heading">Оставьте заявку</h4>
+        <h4 class="modalContainer__heading">на посещение наших центров</h4>
+        <form>
+          <input type="text" placeholder="Имя"/>
+          <input type="email" placeholder="Email"/>
+          <input type="tel" name="" placeholder="Телефон"/>
+          <input type="submit"/>
+        </form>
+      </div>
+    </div>
+    <!-- Circle-color Block-->
+    <div class="headerContainer__circle headerContainer__circle_violet hide-xl"></div>
+    <!-- Slider-header Block-->
+    <div class="headerBanner padding-75 padding-125">
+      <div class="headerBanner__logo">
+        <video autoplay="autoplay" loop="loop" muted="muted">
+          <source src="img/slider/be.webm" type="video/webm"/>
+        </video>
+      </div>
+      <div class="swiper-container headerBanner__slider hide-md">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/slider/slide-1.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-2.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-3.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-4.jpg" alt="alt"/></div>
+          <div class="swiper-slide"><img src="img/slider/slide-5.jpg" alt="alt"/></div>
+        </div><a class="btn-product btn-product_red" href="javascript:;" data-fancybox="btn-header" data-src="#modal" data-animation-duration="700">Приходите на экскурсию!</a>
+      </div>
+    </div>
+    <main>
+      <!-- School-cart Block-->
+      <section class="schoolCartBlock">
+        <div class="wrapper">
+          <div class="schoolCartContainer">
+            <div class="schoolCart">
+              <div class="schoolCart__header">
+                <div class="schoolCart__starGreen schoolCart__starGreen_one"><img src="img/school-cart/objects/green/star-12.svg" alt="alt"/></div>
+                <div class="schoolCart__starGreen schoolCart__starGreen_two"><img src="img/school-cart/objects/green/star-13.svg" alt="alt"/></div>
+                <div class="schoolCart__starGreen schoolCart__starGreen_three"><img src="img/school-cart/objects/green/star-14.svg" alt="alt"/></div>
+                <div class="schoolCart__circleGreen schoolCart__circleGreen_one"></div>
+                <div class="schoolCart__circleGreen schoolCart__circleGreen_two"></div>
+                <div class="schoolCart__circleGreen schoolCart__circleGreen_three"></div>
+              </div>
+              <div class="schoolCart__text schoolCart__text_green">
+                <h4>Вместе <br>с мамой </h4><span>от 1,5-3 лет</span>
+                <div class="schoolCart__bottom">
+                  <div class="schoolCart__bottomStarGreen schoolCart__bottomStarGreen_one"><img src="img/school-cart/objects/star-9.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarGreen schoolCart__bottomStarGreen_two"><img src="img/school-cart/objects/star-10.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarGreen schoolCart__bottomStarGreen_three"><img src="img/school-cart/objects/star-11.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomCircleGreen schoolCart__bottomCircleGreen_one"></div>
+                  <div class="schoolCart__bottomCircleGreen schoolCart__bottomCircleGreen_two"></div>
+                  <div class="schoolCart__bottomCircleGreen schoolCart__bottomCircleGreen_three"></div>
+                  <div class="schoolCart__bottomCircleGreen schoolCart__bottomCircleGreen_four"></div>
+                </div>
+              </div>
+              <div class="schoolCart__img schoolCart__img_green"><img src="img/school-cart/cart-img-1.svg" alt="alt"/></div><a class="btn-product btn-product_green" href="#">Узнать подробней</a>
+            </div>
+            <div class="schoolCart">
+              <div class="schoolCart__header">
+                <div class="schoolCart__starYellow schoolCart__starYellow_one"><img src="img/school-cart/objects/yellow/star-15.svg" alt="alt"/></div>
+                <div class="schoolCart__starYellow schoolCart__starYellow_two"><img src="img/school-cart/objects/yellow/star-16.svg" alt="alt"/></div>
+                <div class="schoolCart__starYellow schoolCart__starYellow_three"><img src="img/school-cart/objects/yellow/star-17.svg" alt="alt"/></div>
+                <div class="schoolCart__circleYellow schoolCart__circleYellow_one"></div>
+                <div class="schoolCart__circleYellow schoolCart__circleYellow_two"></div>
+                <div class="schoolCart__circleYellow schoolCart__circleYellow_three"></div>
+              </div>
+              <div class="schoolCart__text schoolCart__text_yellow">
+                <h4>Детский <br>сад </h4><span>от 3-6 лет</span>
+                <div class="schoolCart__bottom">
+                  <div class="schoolCart__bottomStarYellow schoolCart__bottomStarYellow_one"><img src="img/school-cart/objects/star-9.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarYellow schoolCart__bottomStarYellow_two"><img src="img/school-cart/objects/star-10.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarYellow schoolCart__bottomStarYellow_three"><img src="img/school-cart/objects/star-11.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarYellow schoolCart__bottomStarYellow_four"><img src="img/school-cart/objects/star-8.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomCircleYellow schoolCart__bottomCircleYellow_one"></div>
+                  <div class="schoolCart__bottomCircleYellow schoolCart__bottomCircleYellow_two"></div>
+                </div>
+              </div>
+              <div class="schoolCart__img schoolCart__img_yellow"><img src="img/school-cart/cart-img-2.svg" alt="alt"/></div><a class="btn-product btn-product_yellow" href="#">Узнать подробней</a>
+            </div>
+            <div class="schoolCart">
+              <div class="schoolCart__header">
+                <div class="schoolCart__starPurple schoolCart__starPurple_one"><img src="img/school-cart/objects/purple/star-18.svg" alt="alt"/></div>
+                <div class="schoolCart__starPurple schoolCart__starPurple_two"><img src="img/school-cart/objects/purple/star-19.svg" alt="alt"/></div>
+                <div class="schoolCart__starPurple schoolCart__starPurple_three"><img src="img/school-cart/objects/purple/star-20.svg" alt="alt"/></div>
+                <div class="schoolCart__circlePurple schoolCart__circlePurple_one"></div>
+                <div class="schoolCart__circlePurple schoolCart__circlePurple_two"></div>
+                <div class="schoolCart__circlePurple schoolCart__circlePurple_three"></div>
+              </div>
+              <div class="schoolCart__text schoolCart__text_purple">
+                <h4>Начальная <br>школа </h4><span>от 9-12 лет</span>
+                <div class="schoolCart__bottom">
+                  <div class="schoolCart__bottomStarPurple schoolCart__bottomStarPurple_one"><img src="img/school-cart/objects/star-10.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomStarPurple schoolCart__bottomStarPurple_two"><img src="img/school-cart/objects/star-11.svg" alt="alt"/></div>
+                  <div class="schoolCart__bottomCirclePurple schoolCart__bottomCirclePurple_one"></div>
+                </div>
+              </div>
+              <div class="schoolCart__img schoolCart__img_purple"><img src="img/school-cart/cart-img-3.svg" alt="alt"/></div><a class="btn-product btn-product_purple" href="#">Узнать подробней</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Advantages Block-->
+      <section class="advantagesBlock">
+        <div class="advantagesBlock__star advantagesBlock__star_one hide-lg"><img src="img/advantages/objects/star-24.svg" alt="alt"/></div>
+        <div class="advantagesBlock__star advantagesBlock__star_two hide-lg"><img src="img/advantages/objects/star-23.svg" alt="alt"/></div>
+        <div class="advantagesBlock__star advantagesBlock__star_three hide-lg"><img src="img/advantages/objects/star-22.svg" alt="alt"/></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_one hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_two hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_three hide-lg"></div>
+        <div class="advantagesBlock__circle advantagesBlock__circle_four hide-lg"></div>
+        <div class="wrapper">
+          <h3 class="advantagesBlock__title">Почему метод Монтессори актуален и востребован в мире?</h3>
+          <div class="advantagesContainer">
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-5.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Доступность разнообразных видов деятельности раскрывает потенциал ребенка.</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-3.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>“Богатая” монтессори-среда дает всесторонние знания</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-8.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Развитие в собственном темпе без оценок и сравнений формирует успешность ребенка</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-1.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Билингвальный метод развивает речь, позволяет общаются на русском и английском языках в течение всего дня</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-7.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Индивидуальный подход педагогов позволяет уделить внимание каждому, учесть особенности ребенка</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-4.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Навык выбора деятельности формирует характер/внутренний стержень и ответственность</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-6.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Четкие правила взаимодействия и работы в среде Монтессори дают детям уверенность и спокойствие</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-9.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Воспитание в разновозрастной среде адаптирует к жизни</p>
+              </div>
+            </div>
+            <div class="advantagesCart">
+              <div class="advantagesCart__img"><img src="img/advantages/advantage-2.svg" alt="alt"/></div>
+              <div class="advantagesCart__text">
+                <p>Взгляд на мир, как на Вселенную, расширяет горизонты ребенка</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About-us Block-->
+      <section class="aboutUsBlock">
+        <h3 class="aboutUsBlock__title">Что вы встретите у нас?</h3>
+        <div class="wrapper">
+          <div class="centerCartContainer">
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-1.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Монтессори метод в воспитании детей</h3>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-2.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Билингвальную среду</h3>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-3.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Профессиональную поддержку родителей в воспитании ребенка</h3>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-4.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Сообщество квалифицированных педагогов</h3>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-5.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Организацию и контроль безопасности в помещениях и в зоне прогулок</h3>
+            </div>
+            <div class="centerCart">
+              <div class="centerCart__img"><img src="img/about-us/img-6.jpg" alt="alt"/></div>
+              <h3 class="centerCart__title">Качественное питание (собственная кухня)</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Centres Block-->
+      <section class="cantresBlock">
+        <div class="centresContainer">
+          <div class="centresCart">
+            <div class="centresCart__img"><img class="scale" src="img/centres-main/centres-img-1.jpg" alt=""/>
+              <div class="centresCart__logo"><img src="img/centres-main/be-logo-big.png" alt=""/></div><a class="btn-centres" href="page-programm_childgarden.html">Узнать подробней</a>
+            </div>
+            <div class="centresCart__option centresCart__option_purple"><a href="page-programm_childgarden.html">Шахматы (факультатив 6-10 лет) </a><a href="page-programm_childgarden.html">Архитектура (факультатив 6-10 лет)</a><a href="page-programm_childgarden.html">Больше факультативов</a></div>
+          </div>
+          <div class="centresCart">
+            <div class="centresCart__img"><img class="scale" src="img/centres-main/centres-img-2.jpg" alt=""/>
+              <div class="centresCart__logo"><img src="img/centres-main/ole-logo-big.png" alt=""/></div><a class="btn-centres" href="page-programm_school.html">Узнать подробней</a>
+            </div>
+            <div class="centresCart__option centresCart__option_yellow"><a href="page-programm_school.html">Ритмика (факультатив)</a><a href="page-programm_school.html">Занятные выходные (факультатив)</a><a href="page-programm_school.html">Рисование (факультатив)</a></div>
+          </div>
+        </div>
+      </section>
+      <!--Montessory Block-->
+      <section class="aboutMariaBlock">
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_one hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_two hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_three hide-lg"></div>
+        <div class="aboutMariaBlock__circle aboutMariaBlock__circle_four hide-lg"></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_one hide-lg"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_two hide-lg"><img src="img/about-montessory/star-27.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_three hide-lg"><img src="img/about-montessory/star-26.svg" alt="alt"/></div>
+        <div class="aboutMariaBlock__star aboutMariaBlock__star_four hide-lg"><img src="img/about-montessory/star-25.svg" alt="alt"/></div>
+        <div class="wrapper">
+          <div class="aboutMariaContainer">
+            <div class="aboutMariaText">
+              <h4 class="aboutMariaText__heading">О Марии Монтессори</h4>
+              <p class="aboutMariaText__descr">Монтессори – это фамилия первой женщины в истории Италии, окончившей курс медицины, одной из первых носительниц учёной степени доктора наук.</p>
+              <p class="aboutMariaText__descr">Мария Монтессори - всемирно известный человек своего времени, была выдвинута на Нобелевскую премию мира.В 1988 г. решением ЮНЕСКО её имя включено в список четырех педагогов, определивших направление педагогического мышления в XX веке. Также в него вошли Джон Дьюи, Георг Кершенштейнер и Антон Макаренко.</p>
+              <p class="aboutMariaText__descr">Монтессори-педагогика в России появилась еще в начале прошлого века. В 1910 г. дом ребенка М. Монтессори посетила дочь Льва Толстого Татьяна Сухотина-Толстая. Она увидела в Монтессори-школе воплощение идей своего отца. А в 1914 г. Российское министерство народного просвещения командировало в "Дом ребенка" группу общественных деятелей дошкольного воспитания, что дало толчок в развитии Монтессори-системы в России, однако только до поры революции. В послереволюционной России забытая методика Монтессори возродилась в 90-е годы ХХ века.</p>
+              <p class="aboutMariaText__descr">Система Монтессори получила свое признание во многих странах мира, например - в США, Нидерландах, Индии, Канаде, Австралии, Англии, Италии.</p>
+            </div>
+            <div class="aboutMariaPhoto">
+              <div class="aboutMariaPhoto__img"><img src="img/about-montessory/maria.png" alt="alt"/></div>
+            </div>
+          </div><a class="btn-product btn-product_purple" href="#">Подробнее о методике</a>
+        </div>
+      </section>
+      <!--Teachers Block-->
+      <section class="teachersBlock">
+        <h3 class="teachersBlock__title">Наши педагоги</h3>
+        <div class="wrapper-fluid">
+          <div class="swiper-container teachersSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="teachersSlide">
+                  <div class="teachersSlide__img"><img src="img/slider-teacher/teacher-1.jpg" alt="alt"/></div>
+                  <div class="teachersSlide__text"><span class="teachersSlide__text-name">Галина</span><span class="teachersSlide__text-name">Тодорова-Чебоненко</span><span class="teachersSlide__text-works">Директор центров "Оле Лукойе" и "Be Friends"</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teachersSlide">
+                  <div class="teachersSlide__img"><img src="img/slider-teacher/teacher-2.jpg" alt="alt"/></div>
+                  <div class="teachersSlide__text"><span class="teachersSlide__text-name">Анастасия</span><span class="teachersSlide__text-name">Лотохова</span><span class="teachersSlide__text-works">Монтессори педагог 3-6, 6-9 лет</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teachersSlide">
+                  <div class="teachersSlide__img"><img src="img/slider-teacher/teacher-3.jpg" alt="alt"/></div>
+                  <div class="teachersSlide__text"><span class="teachersSlide__text-name">Полина</span><span class="teachersSlide__text-name">Ронжина</span><span class="teachersSlide__text-works">Монтессори педагог 3-6 лет</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teachersSlide">
+                  <div class="teachersSlide__img"><img src="img/slider-teacher/teacher-4.jpg" alt="alt"/></div>
+                  <div class="teachersSlide__text"><span class="teachersSlide__text-name">Emmanuel</span><span class="teachersSlide__text-name">Bello</span><span class="teachersSlide__text-works">Носитель английского языка</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teachersSlide">
+                  <div class="teachersSlide__img"><img src="img/slider-teacher/teacher-5.jpg" alt="alt"/></div>
+                  <div class="teachersSlide__text"><span class="teachersSlide__text-name">Елена</span><span class="teachersSlide__text-name">Чубукова</span><span class="teachersSlide__text-works">Монтессори педагог 3-6 лет, учитель английского языка</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"><img src="img/icons/arrow-prev.svg" alt=""/></div>
+            <div class="swiper-button-next"><img src="img/icons/arrow-next.svg" alt=""/></div>
+          </div>
+        </div>
+      </section>
+      <!--FAQ Block-->
+      <section class="faqBlock">
+        <h3 class="faqBlock__title">Часто задаваемые вопросы</h3>
+        <div class="wrapper">
+          <div class="faqContainer">
+            <div class="faqContainer__ask faqContainer__ask_small hide-lg"><img src="img/faq/ask-1.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_large hide-lg"><img src="img/faq/ask-2.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_medium hide-lg"><img src="img/faq/ask-3.png" alt=""/></div>
+            <div class="faqContainer__ask faqContainer__ask_big hide-lg"><img src="img/faq/ask-4.png" alt=""/></div>
+            <div class="faqCart">
+              <div class="faqCart__title">
+                <h4 class="faqCart__heading">Мой ребенок аллергик. Как у вас решаются подобные проблемы с питанием?</h4>
+              </div>
+              <div class="faqCart__text">
+                <h5 class="faqCart__subtitle">Ответ:</h5>
+                <p class="faqCart__descr">У нас профессиональная кухня и замечательный повар. Питание щадящее. В меню всегда есть мясные и рыбные блюда, молочные продукты, фрукты, овощи. При поступлении к нам родители сообщают о продуктах, которые запрещены их ребенку, и повар готовит отдельно блюда на замену. Сейчас появляются дети - вегетарианцы, чьи вкусовые потребности несложно учитывать, имея свою кухню. Нам важен каждый ребенок и его особенности здоровья.</p>
+              </div>
+            </div>
+            <div class="faqCart">
+              <div class="faqCart__title">
+                <h4 class="faqCart__heading">Как у вас проходит адаптация ребенка в детском саду?</h4>
+              </div>
+              <div class="faqCart__text">
+                <h5 class="faqCart__subtitle">Ответ:</h5>
+                <p class="faqCart__descr">Период адаптации может занимать от недели до нескольких месяцев. Продолжительность этого периода зависит от ребенка, родителей и среды в саду (педагогов, детей, атмосферы группы). Очень важно, принимая решение привести ребенка в монтессори-группу, отпустить ребенка искренне, доверив его на время педагогам. Искренность родителей доступна детям, они ее буквально ощущают. Она позволяет им находить доверенное лицо в саду, снижает тревожность. Необходимо помнить, что все дети разные - кому-то важно освоиться в одиночестве, другому - прижавшись к взрослому, третьему - найдя друга, интересное занятие. Первые дни мы чутко реагируем на потребности ребенка и вместе с родителями определяем комфортное для ребенка время пребывания в саду. Постепенно этот период приходит к нужному формату посещения. Мы за адаптацию без стресса, с любовью и вниманием.</p>
+              </div>
+            </div>
+            <div class="faqCart">
+              <div class="faqCart__title">
+                <h4 class="faqCart__heading">Как адаптируется мой ребёнок в обычной школе после обучения в вашей?</h4>
+              </div>
+              <div class="faqCart__text">
+                <h5 class="faqCart__subtitle">Ответ:</h5>
+                <p class="faqCart__descr">Дети к 12 годам достигают пубертатного возраста, периода самоопределения. Они должны получить навыки, позволяющие им быть самодостаточными, независимыми, коммуникабельными. Монтессори метод наравне с обучением предметным навыкам уделяет не меньше времени формированию личности ребенка, поэтому наши дети уже в 6-9 лет проявляют характер и вместе с тем работоспособность. К 12-ти дети знают, как учиться, к чему можно стремиться, как достигать целей, нести ответственность. Опыт зарубежных, московских и санкт-петербургских школ Монтессори свидетельствует об успешности детей, выпустившихся из монтессори-классов, при условии что родители учитывают их интересы и сами не ломают своих детей своими ожиданиями.</p>
+              </div>
+            </div>
+            <div class="faqCart">
+              <div class="faqCart__title">
+                <h4 class="faqCart__heading">Очень сложно понять, как работает метод Монтессори. Дети работают сами?! Проводите ли вы открытые уроки?</h4>
+              </div>
+              <div class="faqCart__text">
+                <h5 class="faqCart__subtitle">Ответ:</h5>
+                <p class="faqCart__descr">При условии готовности группы к принятию гостя (одного родителя) мы приглашаем будущих наших родителей на наблюдение в среду Монтессори на двухчасовое занятие. Для семей, рассматривающих возможность обучать ребенка в школе Монтессори, организуется возможность наблюдения работы класса в течение трех часов. Мы также проводим Дни открытых дверей, где педагоги погружают родителей в атмосферу классных занятий.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Gallery Block-->
+      <section class="galleryMainBlock">
+        <h4 class="galleryMainBlock__title">Фотогалерея</h4>
+        <div class="wrapper-fluid">
+          <div class="galleryMasonry"><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-1.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-1.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-2.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-2.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-3.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-3.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-4.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-4.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-5.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-5.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-6.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-6.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-7.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-7.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-8.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-8.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-9.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-9.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-10.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-10.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-11.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-11.jpg" alt="alt"/></a><a class="galleryMasonry__img galleryMasonry__item" href="img/gallery/foto-12.jpg" data-type="image" data-fancybox="gallery"><img src="img/gallery/foto-12.jpg" alt="alt"/></a></div>
+        </div>
+      </section>
+      <!--Gallery Block-->
+      <section class="contactsBlock">
+        <h4 class="contactsBlock__title">Контакты</h4>
+        <div class="contactssMap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd767f626fdd91ccce865d9abe1cbf66a5ca58a411b11fc465ba7f6b2fa38fb4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script></div>
+        <address class="contactsAddressContainer">
+          <div class="contactsAddress contactsAddress_purple"><span class="contactsAddress__name">Be Friends</span><span class="contactsAddress__position">Симбирская, дом 27</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
+          <div class="contactsAddress contactsAddress_orange"><span class="contactsAddress__name">Оле Лукойе</span><span class="contactsAddress__position">Весенний проезд, дом 8,</span><span class="contactsAddress__phone">тел.: 46-29-67</span></div>
+        </address>
+      </section>
+    </main>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <footer class="footer">
+      <div class="wrapper-fluid">
+        <div class="footerContainer">
+          <div class="footerContainer__left">
+            <div class="footerContainer__brand"><a class="footerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="footerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="footerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div><a class="btn-product btn-product_red" href="javascript:;" data-fancybox="btn-footer" data-src="#modal" data-animation-duration="700">Приходите на экскурсию!</a>
+            <div class="footerContainer__social">
+              <h5 class="footerContainer__social-title">Мы в соцсетях:</h5>
+              <div class="footerContainer__social-img"><a href="#"><img src="img/icons/vk.png" alt="alt"/></a><a href="#"><img src="img/icons/facebook.png" alt="alt"/></a><a href="#"><img src="img/icons/instagramm.png" alt="alt"/></a><a href="#"><img src="img/icons/odnoklasniki.png" alt="alt"/></a></div>
+            </div>
+          </div>
+          <div class="footerContainer__right">
+            <ul class="footerContainer__menu">
+              <li><a href="">Наши центры</a>
+                <ul class="menu-down">
+                  <li><a href="">Be Friends</a></li>
+                  <li><a href="">Оле Лукойе</a></li>
+                </ul>
+              </li>
+              <li><a href="">Методика</a></li>
+              <li><a href="">Программы</a>
+                <ul class="menu-down">
+                  <li><a href="">от 1,5-3 лет</a></li>
+                  <li><a href="">от 3-6 лет</a></li>
+                  <li><a href="">от 6-9 лет</a></li>
+                </ul>
+              </li>
+              <li><a href="">Педагоги</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

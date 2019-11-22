@@ -122,9 +122,9 @@ function html() {
 // Собрать все стили.
 function styles() {
 	return gulp.src(source.app.css + '*.+(css|map)')
-	.pipe(cleanCSS({
-		level: 2
-	}))
+	// .pipe(cleanCSS({
+	// 	level: 2
+	// }))
 	.pipe(gulp.dest(source.build.css));
 }
 // Собрать все скрипты.
@@ -165,7 +165,7 @@ function optimg() {
 		}),
 		imagemin.svgo(),
 		imagemin.optipng({optimizationLevel: 3}),
-		pngquant({quality: '70-80', speed: 5})
+		pngquant({quality: [0.7, 0.8], speed: 5})
 	],{
 		verbose: true
 	}))
