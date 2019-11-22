@@ -1,0 +1,10 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Блог'
+
+block content
+	include ../modules/blocks/circle-violet
+	main.blogMain
+		// Carts Blog Block
+		include ../modules/blocks/blog-content

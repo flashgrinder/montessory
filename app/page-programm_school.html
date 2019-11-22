@@ -34,12 +34,24 @@
               </ul>
             </li>
             <li><a href="page-teachers.html">Педагоги</a></li>
-            <li><a href="#">Блог</a></li>
+            <li><a href="index.html">Блог</a></li>
             <li><a href="page-contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
+    <div class="modalContainer" id="modal" style="display: none;">
+      <div class="modalContainer__wrapp">
+        <h4 class="modalContainer__heading">Оставьте заявку</h4>
+        <h4 class="modalContainer__heading">на посещение наших центров</h4>
+        <form>
+          <input type="text" placeholder="Имя"/>
+          <input type="email" placeholder="Email"/>
+          <input type="tel" name="" placeholder="Телефон"/>
+          <input type="submit"/>
+        </form>
+      </div>
+    </div>
     <!-- Circle-color Block-->
     <div class="headerContainer__circle headerContainer__circle_purple hide-xl"></div>
     <main>
@@ -74,10 +86,10 @@
           <div class="aboutProgrammContainer">
             <div class="aboutProgrammText">
               <h3 class="aboutProgrammText__title">О программе</h3>
-              <p class="aboutProgrammText__descr">Начальная школа - это пространство, где дети увлеченно исследуют области языка, математики, ботаники, зоологии, геометрии, географии, астрономии, истории. Они получают навык ставить себе задачи, планируя день. Дети имеют возможность выбирать наглядный монтессори-материал, выполнять работу в своем темпе, заниматься в группе, обсуждать задания.</p>
+              <p class="aboutProgrammText__descr">Начальная школа - это пространство, где дети увлеченно исследуют области языка, математики, ботаники, зоологии, геометрии, географии, астрономии, истории. Они получают навык ставить себе задачи, планируя день. Дети имеют возможность выбирать наглядный монтессори-материал, выполнять работу в своем темпе, заниматься в группе, обсуждать задания.</p><a class="btn-product btn-product_purple" href="javascript:;" data-fancybox="data-fancybox" data-src="#modal" data-animation-duration="700">Оставить заявку!</a>
               <div class="aboutProgrammText__img"><img src="img/programm/teachers-1.jpg" alt="alt"/></div>
               <h3 class="aboutProgrammText__title">Монтессори-педагог</h3>
-              <p class="aboutProgrammText__descr">Его главная задача заинтересовать ребенка, развить его воображение и мышление, показать, как можно получить знание, индивидуально разбирая тему за темой. Монтессори педагогом движет философия гуманного подхода к образованию детей. Он не только имеет высшее образование, но освоил методику на специализированном курсе и постоянно совершенствует свои навыки в профессиональном монтессори сообществе.</p>
+              <p class="aboutProgrammText__descr">Его главная задача заинтересовать ребенка, развить его воображение и мышление, показать, как можно получить знание, индивидуально разбирая тему за темой. Монтессори-педагогом движет философия гуманного подхода к образованию детей. Он не только имеет высшее образование, но и освоил методику на специализированном курсе и постоянно совершенствует свои навыки в профессиональном монтессори-сообществе.</p>
             </div>
           </div>
         </div>
@@ -90,28 +102,29 @@
               <div class="centerCart__img"><img src="img/programm/school/img-1.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Билингвальный формат</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Двуязычная среда обеспечивается владением английским языком всеми сотрудниками центра и активной деятельностью монтессори-педагога, единственным языком общения в центре для которого является английский язык. Метод Монтессори дает возможность реализовать билингвальный подход не только во время прогулок и обедов, но и в период свободной работы детей в монтессори-среде. Англоязычный монтессори-педагог работает в паре с основным монтессори-педагогом в классе и дает презентации на английском языке. Кроме свободного общения дети занимаются английским языком на классических уроках.</p>
+                <p class="centerCart__descr">Двуязычная среда обеспечивается владением английским языком всеми сотрудниками центра и активной деятельностью монтессори-педагога, единственным языком общения в центре для которого является английский язык.</p>
+                <p class="centerCart__descr">Метод Монтессори дает возможность реализовать билингвальный подход не только во время прогулок и обедов, но и в период свободной работы детей в монтессори-среде. Англоязычный монтессори-педагог работает в паре с основным монтессори-педагогом в классе и дает презентации на английском языке. Кроме свободного общения дети занимаются английским языком на классических уроках.</p>
               </div>
             </div>
             <div class="centerCart">
               <div class="centerCart__img"><img src="img/programm/school/img-2.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Индивидуальный подход</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Все темы по русскому языку, математике, геометрии разбираются с каждым ребенку индивидуально в рамках свободной работы в классе. При этом упражнения ребенок выполняет в своем темпе в нужное ему время.</p>
+                <p class="centerCart__descr">Все темы по русскому языку, математике, геометрии разбираются с каждым ребенком индивидуально в рамках свободной работы в классе. При этом упражнения ребенок выполняет в своем темпе в нужное ему время.</p>
               </div>
             </div>
             <div class="centerCart">
               <div class="centerCart__img"><img src="img/programm/school/img-3.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Совместная проектно-образовательная работа</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Этот формат работы обеспечивает погружение детей в темы окружающего мира, давая возможность "проживать" истории жизни и процессов на Земле с экспертами по творчеству, архитектуре, музыке, при активном участии Монтессори педагога и "носителя" языка. Именно в рамках такой работы дети увлекаются историей, биологией, географией, что мотивирует их на дальнейшее исследование.</p>
+                <p class="centerCart__descr">Этот формат работы обеспечивает погружение детей в темы окружающего мира, давая возможность «проживать» истории жизни и процессов на Земле с экспертами по творчеству, архитектуре, музыке, при активном участии монтессори-педагога и носителя языка. Именно в рамках такой работы дети увлекаются историей, биологией, географией, что мотивирует их на дальнейшее исследование.</p>
               </div>
             </div>
             <div class="centerCart">
               <div class="centerCart__img"><img src="img/programm/school/img-4.jpg" alt="alt"/></div>
               <h3 class="centerCart__title">Уникальная развивающая среда</h3>
               <div class="centerCart__text">
-                <p class="centerCart__descr">Богатая база наглядных материалов по математике, русскому языку, геометрии для детей начальной школы включает специально разработанный в рамках метода Монтессори материал, позволяющий не только осваивать программу ФГОС, но и "понимать" и любить основные предметы. Уникальные Ленты времени и Большие истории призваны во взаимосвязи фактов погрузить детей в историю происходивших на Земле событий.</p>
+                <p class="centerCart__descr">Богатая база наглядных материалов по математике, русскому языку, геометрии для детей начальной школы включает специально разработанный в рамках метода Монтессори материал, позволяющий не только осваивать программу ФГОС, но и «понимать» и любить основные предметы. Уникальные Ленты времени и Большие истории призваны во взаимосвязи фактов погрузить детей в историю происходивших на Земле событий.</p>
               </div>
             </div>
             <div class="centerCart">
@@ -253,7 +266,7 @@
       <div class="wrapper-fluid">
         <div class="footerContainer">
           <div class="footerContainer__left">
-            <div class="footerContainer__brand"><a class="footerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="footerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="footerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div><a class="btn-product btn-product_red" href="#">Приходите на экскурсию!</a>
+            <div class="footerContainer__brand"><a class="footerContainer__brand-logo" href="#"><img src="img/icons/be-friends_top.png" alt="alt"/></a><a class="footerContainer__brand-logo" href="#"><img src="img/icons/ole-lukoye_top.png" alt="alt"/></a><a class="footerContainer__brand-phone" href="tel: +7 8452 46-29-75"><img src="img/icons/phone_top.png" alt="alt"/><span>+7 (8452) 46-29-67</span></a></div><a class="btn-product btn-product_red" href="javascript:;" data-fancybox="btn-footer" data-src="#modal" data-animation-duration="700">Приходите на экскурсию!</a>
             <div class="footerContainer__social">
               <h5 class="footerContainer__social-title">Мы в соцсетях:</h5>
               <div class="footerContainer__social-img"><a href="#"><img src="img/icons/vk.png" alt="alt"/></a><a href="#"><img src="img/icons/facebook.png" alt="alt"/></a><a href="#"><img src="img/icons/instagramm.png" alt="alt"/></a><a href="#"><img src="img/icons/odnoklasniki.png" alt="alt"/></a></div>

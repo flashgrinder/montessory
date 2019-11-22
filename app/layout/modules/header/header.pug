@@ -34,6 +34,15 @@ header.headerContainer
 				li
 					a(href="page-teachers.html") Педагоги
 				li
-					a(href="#") Блог
+					a(href="index.html") Блог
 				li
 					a(href="page-contacts.html") Контакты
+.modalContainer#modal(style="display: none;")
+	.modalContainer__wrapp
+		h4.modalContainer__heading Оставьте заявку
+		h4.modalContainer__heading на посещение наших центров
+		form
+			input(type="text" placeholder="Имя")
+			input(type="email" placeholder="Email")
+			input(type="tel", name="" placeholder="Телефон")
+			input(type="submit")

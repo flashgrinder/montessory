@@ -3,6 +3,7 @@
 	padding-top: 50px
 	padding-bottom: 50px
 	z-index: 5
+	+lg(padding-top, 0)
 .schoolCartContainer
 	+row-flex()
 	justify-content: center
@@ -17,8 +18,7 @@
 	position: relative
 	font-family: $blogger
 	height: 430px
-	+md-block
-		margin-top: 50px
+	+lg(margin-top, 50px)
 	&:hover .schoolCart__text
 		height: 300px
 		transition: all 1s
