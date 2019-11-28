@@ -3575,14 +3575,6 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 
-.tableDescription p {
-  font-family: "BloggerSans", sans, Tahoma;
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  color: #585858;
-}
-
 /* Blog Page */
 
 /* Blog Block */
@@ -3672,7 +3664,7 @@ button.swiper-pagination-bullet {
   margin: 20px 0 0 0;
 }
 
-.blogCart__descr {
+.blogCart p {
   font-family: "Roboto", sans-serif, Tahoma;
   font-size: 16px;
   font-weight: normal;
@@ -4206,11 +4198,15 @@ body {
   margin-right: 0 !important;
 }
 
-/* .debug
-	@include debug(rgba(0, 0, 0, 0.3), 1px solid rgb(19, 138, 92))
-	z-index: 999 */
-
 /* Other Styles */
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  color: #f6f6f6;
+}
+
+div.wpcf7-mail-sent-ok {
+  color: #f6f6f6;
+}
 
 .fancybox-button svg {
   color: #f6f6f6;
@@ -4285,9 +4281,8 @@ body {
 
   .headerContainer {
     padding-top: 17px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
     background: #4D3D66;
-    border-bottom: 1px solid #f6f6f6;
     position: fixed;
     width: 100%;
   }
@@ -4813,10 +4808,6 @@ body {
     font-size: 20px;
   }
 
-  .tableDescription p {
-    font-size: 16px;
-  }
-
   .footerContainer__brand-phone {
     margin-top: 20px;
   }
@@ -5076,4 +5067,3 @@ body {
     left: 10px;
   }
 }
-/*# sourceMappingURL=style.min.css.map */
